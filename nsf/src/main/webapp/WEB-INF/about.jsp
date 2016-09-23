@@ -44,7 +44,7 @@
 
 						</li>
 						<li>
-							Texas A&M University
+							Texas A&amp;M University
 						</li>
 						<li>
 							PO Box 3011
@@ -53,7 +53,7 @@
 							Commerce, TX 75428
 						</li>
 						<li>
-							101 & 102 JOUR Building
+							101 &amp; 102 JOUR Building
 						</li>
 					</ul>
 				</li>

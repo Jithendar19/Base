@@ -63,7 +63,7 @@
 					<span class="address">address</span>
 					<ul>
 						<li>
-							Texas A&M University - Commerce
+							Texas A&amp;M University - Commerce
 							<br />Computer Science Department - J203
 							<br />PO Box 3011
 							<br />Commerce, TX 75428

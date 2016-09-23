@@ -260,7 +260,6 @@ label[for="nav-trigger"] {
 	width: 960px;
 }
 #body .sidebar {
-	background: white;
 	float: left;
 	margin: 0 10px 0 20px;
 	padding: 0 0 10px;
@@ -268,7 +267,7 @@ label[for="nav-trigger"] {
 }
 #body .sidebar h3 {
 	/*border-bottom: 2px solid #a5e2ef;*/
-	color: white;
+	color: black;
 	font-size: 16px;
 	font-weight: normal;
 	line-height: 30px;
@@ -282,7 +281,7 @@ label[for="nav-trigger"] {
 	padding: 0 0 0 20px;
 }
 #body .sidebar ul li {
-	color: #fff;
+	color: black;
 	font-size: 12px;
 	list-style: none;
 	line-height: 30px;

@@ -116,7 +116,7 @@
 								
 								<li>
 									Eric Fry
-									<br />TAMUC: Computer Science & Mathematics
+									<br />TAMUC: Computer Science &amp; Mathematics
 								</li>
 							</ul>
 						</li>
@@ -182,10 +182,10 @@
 					<span class="address">address</span>
 					<ul>
 						<li>Computer Science Department
-						<br />Texas A&M University
+						<br />Texas A&amp;M University
 						<br />PO Box 3011
 						<br />Commerce, TX 75428
-						<br />101 & 102 JOUR Building
+						<br />101 &amp; 102 JOUR Building
 						</li>
 					</ul>
 				</li>
@@ -231,7 +231,7 @@
 			</p>
 			<ul>
 				<li id="facebook">
-					<a href="https://www.facebook.com/NSF-SSAC-533481070149236/">facebook</a>
+					<a href="https://www.facebook.com/rnassac/">facebook</a>
 				</li>
 				<li id="twitter">
 					<a href="http://www.twitter.com/">twitter</a>
