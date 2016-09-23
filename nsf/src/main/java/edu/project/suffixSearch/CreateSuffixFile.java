@@ -17,8 +17,7 @@ import java.util.logging.Logger;
 
 public class CreateSuffixFile {
         private int SuffixArrayIndexIterator = 0;
-        private Scanner in = new Scanner(System.in), 
-        inputReader;
+        private Scanner inputReader;
         
     public void CreateOutputFile(int[][] suffix, int SuffixArrayIndexIterator, String FileName) {
         try (PrintWriter writeToFile = new PrintWriter(new File(FileName))) {

@@ -8,8 +8,6 @@
 
 package edu.project.suffixSearch;
 
-import java.util.ArrayList;
-
 public class SuffixIntArray {
 
         private int lengthOfEachRNA[]= new int[5000];

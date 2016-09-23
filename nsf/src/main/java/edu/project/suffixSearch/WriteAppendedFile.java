@@ -14,8 +14,7 @@ import java.util.Scanner;
 
 public class WriteAppendedFile {
     
-    private Scanner in = new Scanner(System.in), 
-            fileReader;
+    private Scanner fileReader;
     private String newFile,
             appendFileName,
             line, 

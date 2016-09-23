@@ -17,8 +17,7 @@ import java.util.Iterator;
 
 
 public class FileProcess {
-    private Scanner in = new Scanner(System.in), 
-            inputReader, 
+    private Scanner inputReader, 
             lineReader;
     private String inputFileName, 
             outputFileName,

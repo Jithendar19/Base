@@ -14,8 +14,7 @@ import java.util.Scanner;
 public class SuffixFileProcess {
     
     //variables as described above
-    private Scanner in = new Scanner(System.in), 
-            inputReader, 
+    private Scanner inputReader, 
             lineReader;
     private String inputFileName, 
             line;
