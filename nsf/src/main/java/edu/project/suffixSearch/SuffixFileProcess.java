@@ -6,6 +6,7 @@
  * Processing the NewFormat Concatenated file
 **/
 
+
 package edu.project.suffixSearch;
 import java.io.*;
 import java.util.ArrayList;
@@ -53,7 +54,7 @@ public class SuffixFileProcess {
             else {
                     if(line.startsWith("*"))
                     {
-                      inputArray[FileNumber++][FileElement] = -999;
+                      inputArray[FileNumber++][FileElement] = -99999;
                       FileElement = 0;
                       inputArray[FileNumber][FileElement++] = FileNumber+1;
                     }
@@ -61,14 +62,17 @@ public class SuffixFileProcess {
                     {
                         if(SearchFile == 1)
                             index = lineReader.nextInt();
+                        
                         nucleotide = lineReader.next().charAt(0);
                         partnerOfIndex = lineReader.nextInt();
                         
                         if (partnerOfIndex != 0 && SearchFile == 1)
                             partnerOfIndex = partnerOfIndex - index;
                         
-                        partnerOfIndex = partnerOfIndex << 4;
+                        if (Nucleotide == 1){
+                        partnerOfIndex = partnerOfIndex << 8;
                         ascii = (int) nucleotide;
+                        }
                         
                         if(partnerOfIndex < 0 && Nucleotide == 1)
                             partnerOfIndex = partnerOfIndex - ascii;
@@ -76,15 +80,16 @@ public class SuffixFileProcess {
                             partnerOfIndex = partnerOfIndex + ascii;
                         
                         inputArray[FileNumber][FileElement++] = partnerOfIndex;
-                        
-                       // System.out.println("FileNumber : " + FileNumber + "FileElement :" +FileElement  );
                     }
-                }          
+                    
+                }
         }
+        if(SearchFile == 1)
+           inputArray[FileNumber][FileElement++] = -99999;
         return inputArray;
     }
     
-        public int BuildIntegerArray(int[][] inputArray){
+    public int BuildIntegerArray(int[][] inputArray){
         return FileNumber;
     } 
  

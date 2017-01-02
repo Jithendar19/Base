@@ -339,7 +339,7 @@ public class RegularExp  {
         String file="";
     	
         
-        file="/Users/50007728/GitHub/RNA/Base/nsf/src/main/resources/a/"+filename;
+        file=filename;
         
         System.out.println("opening file"+ file);
         

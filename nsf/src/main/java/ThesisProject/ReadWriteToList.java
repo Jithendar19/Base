@@ -99,7 +99,7 @@ public class ReadWriteToList {
     public boolean checkEmpty() throws IOException, ClassNotFoundException {
         ObjectInputStream inputStream = null;
         try{
-            inputStream = new ObjectInputStream(new FileInputStream("/Users/50007728/GitHub/RNA/Base/nsf/src/main/resources/a/RegExp_Info_List.txt"));
+            inputStream = new ObjectInputStream(new FileInputStream("/Users/Shared/NSF_Data_Files/RegExp_Info_List.txt"));
         }catch(IOException e){
             System.out.println("The file is Empty: " + e);
             return true;
@@ -128,7 +128,7 @@ public class ReadWriteToList {
         ObjectOutputStream  outputStream = null;
  
         try{
-            outputStream = new ObjectOutputStream(new FileOutputStream("/Users/50007728/GitHub/RNA/Base/nsf/src/main/resources/a/RegExp_Info_List.txt"));
+            outputStream = new ObjectOutputStream(new FileOutputStream("/Users/Shared/NSF_Data_Files/RegExp_Info_List.txt"));
         }catch(IOException e){
             System.out.println("Could not open the file." + e);
             System.exit(0);

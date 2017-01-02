@@ -17,7 +17,8 @@ import java.util.Iterator;
 
 
 public class FileProcess {
-    private Scanner inputReader, 
+    private Scanner in = new Scanner(System.in), 
+            inputReader, 
             lineReader;
     private String inputFileName, 
             outputFileName,
@@ -102,7 +103,7 @@ public class FileProcess {
         for (int i = 0; i < length; i++) {
             integerAsArray[i] = iterator.next();
         }
-        integerAsArray[length] = -9999;
+        integerAsArray[length] = -99999;
         return integerAsArray;
     }
     

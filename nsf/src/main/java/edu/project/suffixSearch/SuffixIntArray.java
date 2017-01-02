@@ -13,8 +13,6 @@ public class SuffixIntArray {
         private int lengthOfEachRNA[]= new int[5000];
         private int SuffixArrayIndexIterator = 0;
         private int TempArray[][] = new int[3000000][3];
-        private int NoOfFiles;
-        private int Nucleotide;  
         private String outputString = "#" ;
         
         
@@ -22,14 +20,14 @@ public class SuffixIntArray {
         instead of disturbing the actual inut array */
         
         /* Function that creates the Suffix Array, sorts the array and does binary search */
-        public void createSuffixArray(int[][] inputRNA,int FileNumber, int[][] Suffix)
+        public void createSuffixArray(int[][] inputRNA,int FileNumber, int[][] Suffix, int Nucleotide)
         {           
             //Display  RNA array and calculating the length of each array
          //  System.out.println("Input RNA Array : ");
-            for(int x = 0; x < NoOfFiles ; x++)
+            for(int x = 0; x < FileNumber ; x++)
             {
                 int y;
-                for (y=0; inputRNA[x][y] != -999; y++)
+                for (y=0; inputRNA[x][y] != -99999; y++)
                 {
                  //  System.out.print(inputRNA[x][y]+" ");
                 } 
@@ -47,7 +45,7 @@ public class SuffixIntArray {
             //Creating the suffix array
             int j=0,k=0,t=1;
             System.out.println("Creating Suffix Array.....");
-            for (int x =0 ; x < NoOfFiles ; x++ )
+            for (int x =0 ; x < FileNumber ; x++ )
             {
                 k =0;t=1;
                 while(k < lengthOfEachRNA[x] )
@@ -145,7 +143,7 @@ public class SuffixIntArray {
                         int n = TempArray[j][0];
                         int u = TempArray[i][1];
                         int v = TempArray[j][1];
-                        while(inputRNA[m-1][u] != -999 || inputRNA[n-1][v] != -999)
+                        while(inputRNA[m-1][u] != -99999 || inputRNA[n-1][v] != -99999)
                         {
                             if(inputRNA[m-1][u] > inputRNA[n-1][v])
                             {
@@ -174,7 +172,7 @@ public class SuffixIntArray {
 //Binary Search to find the no. of matches 
 public String search(int[][] Search, int length, int n,int[][] Suffix, int[][] inputRNA,int SuffixArrayIndexIterator)
 {
-	int Greater ;
+	int Greater , NoOfMatches = 0; outputString = "#";
 	int l = 0, r = SuffixArrayIndexIterator;
         while ( l <= r)
         {
@@ -182,15 +180,17 @@ public String search(int[][] Search, int length, int n,int[][] Suffix, int[][] i
           Greater = CompareSearchRNA(keymid,n,Search,length,Suffix, inputRNA);
           if (Greater == -1)
           {
-            int NoOfMatches = 1;
+            NoOfMatches = 1;
             int small = searchSmallestRange(Search,l,keymid,length,n,Suffix,inputRNA);
             int large = searchLargestRange(Search,keymid,r,length,n,Suffix,inputRNA);
             outputString = GenerateOutputString(small,large,Suffix,length);
             if(small != large)
                 NoOfMatches = (large - small)+1;
-           //  System.out.println("Largest Match  :" +large);
-           // System.out.println("Smallest Match  :" +small);
-           // System.out.println("Number of matches : " +NoOfMatches);
+            outputString = outputString + "*" + NoOfMatches + "$";
+            /* System.out.println("Largest Match  :" +large);
+            System.out.println("Smallest Match  :" +small);
+            System.out.println("Number of matches : " +NoOfMatches); */
+           // System.out.println("outputString1 : " +outputString);
             return outputString;
           } 
           if (Greater == 1)
@@ -198,7 +198,9 @@ public String search(int[][] Search, int length, int n,int[][] Suffix, int[][] i
           else
             r = keymid - 1;
         }
-      //  System.out.println("No matches were found ");
+      // System.out.println("No matches were found ");
+     // System.out.println("outputString2 : " +outputString);
+      outputString = outputString + "*" + NoOfMatches + "$";
       return outputString;
 }
 

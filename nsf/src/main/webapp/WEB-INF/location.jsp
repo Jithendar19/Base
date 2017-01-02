@@ -12,6 +12,7 @@
 	<meta charset="UTF-8">
 	<title>Our Team - NSF SSAC</title>
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css" type="text/css">
+	<link rel="icon" href="${pageContext.request.contextPath}/resources/images/logo.png">
 </head>
 <body>
 	<ul class="navigation">
@@ -20,6 +21,7 @@
 	    <li class="nav-item"><a href="<c:url value="/about"/>">About Us</a></li>
 	    <li class="nav-item"><a href="<c:url value="/team"/>">Team Members</a></li>
 	    <li class="nav-item"><a href="<c:url value="/upload"/>">Search</a></li>
+		<li class="nav-item"><a href="<c:url value="/comparison"/>">Comparison</a></li>
 	</ul>
 
 	<input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -44,38 +46,17 @@
 								<li>
 									Professor Dr. Abdullah Arslan
 									<br />TAMUC: Computer Science
+									<br />Phone: +1 (903) 468-3097
+									<br />E-mail: <a href="mailto:Abdullah.Arslan@tamuc.edu">Abdullah.Arslan@tamuc.edu</a>
+									<br />Hours: Mondays to Fridays 7:00am - 6:00pm
 								</li>
 							</ul>
 						</li>
-						<li>
-							telephone
-							<ul>
-								<li>
-									 903-468-3097
-								</li>
-							</ul>
-						</li>
-						<li>
-							Email
-							<ul>
-								<li>
-									Abdullah.Arslan@tamuc.edu
-								</li>
-							</ul>
-						</li>
-						<li>
-							Hours
-							<ul>
-								<li>
-									Mondays to Fridays
-									<br />7:00am - 6:00pm
-								</li>
-							</ul>
-						</li>
+						
 					</ul>
 				</div>
 				<div>
-					<span>Student Researcher</span>
+					<span>Student Researcher - Undergraduate</span>
 					<ul>
 						<li>
 							<ul>
@@ -84,63 +65,36 @@
 								<li>
 									Rabindra Raj Pandey
 									<br />TAMUC: Computer Science
-								</li>
-							</ul>
-						</li>
-						<li>
-							telephone
-							<ul>
-								<li>
-									817-271-3281
+									<br />Phone: +1 (817) 271-3281
+									<br />E-mail: <a href="mailto:rrj.pandey@gmail.com">rrj.pandey@gmail.com</a>
+									<br />Hours: Mondays to Fridays 7:00am - 6:00pm
 								</li>
 							</ul>
 						</li>
 						
-						<li>
-							hours
-							<ul>
-								<li>
-									Mondays to Fridays
-									<br />7:00am - 6:00pm
-								</li>
-							</ul>
-						</li>
+						
 					</ul>
 				</div>
 				<div>
-					<span>Student Researcher</span>
+					<span>Student Researcher - Undergraduate Student</span>
 					<ul>
 						<li>
 							<ul>
-							<li><img src="${pageContext.request.contextPath}/resources/images/.jpg" alt="Eric's Pic" width="170" height="196"></li>
+							<li><img src="${pageContext.request.contextPath}/resources/images/eric.png" alt="Eric's Pic" width="170" height="196"></li>
 								
 								<li>
 									Eric Fry
 									<br />TAMUC: Computer Science &amp; Mathematics
-								</li>
-							</ul>
-						</li>
-						<li>
-							telephone
-							<ul>
-								<li>
-									903-583-0238
-								</li>
-							</ul>
-						</li>
-						<li>
-							hours
-							<ul>
-								<li>
-									Mondays to Fridays
-								<br />7:00am - 6:00pm
+									<br />Phone: +1 (903) 583-0238
+									<br /><a href="mailto:efry1@leomail.tamuc.edu">efry1@leomail.tamuc.edu</a>
+									<br />Hours: Monday-Fridays 8:00am - 6:00pm
 								</li>
 							</ul>
 						</li>
 					</ul>
 				</div>
 				<div>
-					<span>Student Researcher</span>
+					<span>Student Researcher - Graduate Student</span>
 					<ul>
 						<li>
 							<ul>
@@ -148,26 +102,28 @@
 								
 								<li>
 									Jithendar Anandan
-								<br />TAMUC, Computer Science
+									<br />TAMUC, Computer Science
+									<br />Phone: +1 (903) 442-1741
+									<br />E-mail: <a href="mailto:janandan@leomail.tamuc.edu">janandan@leomail.tamuc.edu</a>
+									<br />Hours: Monday-Fridays 7:00am - 6:00pm
 								</li>
 							</ul>
 						</li>
+					</ul>
+				</div>
+				<div>
+					<span>Student Researcher - Undergraduate Student</span>
+					<ul>
 						<li>
-							telephone
 							<ul>
+							<li><img src="${pageContext.request.contextPath}/resources/images/.jpg" alt="Keith's Pic" width="170" height="196"></li>
+								
 								<li>
-									903-422-1741
-								</li>
-							</ul>
-						</li>
-						<li>
-							hours
-							<ul>
-								<li>
-									Mondays to Fridays
-								</li>
-								<li>
-									7:00am - 6:00pm
+									Keith Monschke
+									<br />TAMUC: Computer Science &amp; Mathematics
+									<br />Phone: +1 (903) 583-0238
+									<br /><a href="mailto:kmonschke@leomail.tamuc.edu">kmonschke@leomail.tamuc.edu</a>
+									<br />Hours: Monday-Fridays 7:00am - 6:00pm
 								</li>
 							</ul>
 						</li>
