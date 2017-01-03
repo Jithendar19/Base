@@ -25,7 +25,7 @@ import edu.project.suffixSearch.CompareRNA;
 import edu.project.suffixSearch.NSFRNA;
 import edu.project.suffixSearch.RNAVariables;
 import edu.project.suffixSearch.SuffixFileProcess;
-import edu.project.suffixSearch.SuffixIntArray;
+import edu.project.suffixSearch.BinarySearch;
 
 /**
  * Handles requests for the application home page.
@@ -35,8 +35,8 @@ public class HomeController {
 	//final static Logger Log = LogManager.getLogger(HomeController.class.getName());
 	
 	RegularExp r = new RegularExp();
-	String path = "/Users/Shared/NSF_Data_Files/";
-	String searchedPath = "/Users/Shared/NSF_Searched_Files/";
+	String path = "/opt/NSF_Data_Files/";
+	String searchedPath = "/opt/NSF_Searched_Files/";
 	String inputRNA = path + "Input RNA.txt";
 	String dataBase= r.openFile(inputRNA);
 	
@@ -123,7 +123,8 @@ public class HomeController {
 				
 				// Searching the RNA
 				System.out.println("Searching Pattern in the database. ");
-				SuffixIntArray searchOnly = new SuffixIntArray();
+				//SuffixIntArray searchOnly = new SuffixIntArray();
+				BinarySearch searchOnly = new BinarySearch();
 				for (int k = 0; k <= var.getNoOfSearchPatterns(); k++) {
 					
 					 startTime = System.nanoTime();
@@ -354,7 +355,7 @@ public class HomeController {
 			try {
 				byte[] bytes = file.getBytes();
 				BufferedOutputStream stream = new BufferedOutputStream(
-						new FileOutputStream(new File("/Users/Shared/NSF_Data_Files/" + name)));
+						new FileOutputStream(new File("/opt/NSF_Data_Files/" + name)));
 				stream.write(bytes);
 				stream.close();
 
@@ -385,11 +386,7 @@ public class HomeController {
 	@RequestMapping(value = "/comparison", method = RequestMethod.GET)
 	public String provideComparisonInfo(Model model, HttpServletRequest request) {
 		System.out.println("IP Address: " + request.getRemoteAddr() + " has accessed the Comparison Page.");
-		String[] fileNames = new String[varna.length];
 		
-		for (int i= 0; i<varna.length; i++){
-			fileNames[i] = (varna[i][0]);
-		}
 		
 		model.addAttribute("fileNames", varna);
 		return "comparison";

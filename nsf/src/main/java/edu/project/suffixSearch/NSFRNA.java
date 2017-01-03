@@ -13,8 +13,8 @@ public class NSFRNA {
 	public NSFRNA(RNAVariables var) {
         
         //Set Concatenated file name and Search file name        
-        var.setConcatenatedFileName("/Users/Shared/NSF_Data_Files/NewFormatConcatenated.txt");         
-        //var.setSearchFileName("/Users/Shared/NSF_Data_Files/searchASE.txt");
+        var.setConcatenatedFileName("/opt/NSF_Data_Files/NewFormatConcatenated.txt");         
+        //var.setSearchFileName("/opt/NSF_Data_Files/searchASE.txt");
        
         //Reading InputRNA
         System.out.println("Reading Input RNA Nucleotide....  "); 
@@ -50,7 +50,7 @@ public class NSFRNA {
         //Reading Suffix Array Nucleotide
         System.out.println("Reading Suffix Array from file....  "); 
         CreateSuffixFile readSuffixNucleotide = new CreateSuffixFile();
-        readSuffixNucleotide.OpenFile("/Users/Shared/NSF_Data_Files/SuffixFileNucleotide.txt");
+        readSuffixNucleotide.OpenFile("/opt/NSF_Data_Files/SuffixFileNucleotide.txt");
         var.setSuffixNucleotide(readSuffixNucleotide.ReadFile(var.getSuffixNucleotide()));
         var.setSuffixArrayIndexIteratorNucleotide(readSuffixNucleotide.SuffixArrayIndexIterator());
         readSuffixNucleotide.CloseFile();
@@ -58,7 +58,7 @@ public class NSFRNA {
         
         //Reading Suffix Array Structure
         CreateSuffixFile readSuffixStructure = new CreateSuffixFile();
-        readSuffixStructure.OpenFile("/Users/Shared/NSF_Data_Files/SuffixFileStructure.txt");
+        readSuffixStructure.OpenFile("/opt/NSF_Data_Files/SuffixFileStructure.txt");
         var.setSuffixStructure(readSuffixStructure.ReadFile(var.getSuffixStructure()));
         var.setSuffixArrayIndexIteratorStructure(readSuffixStructure.SuffixArrayIndexIterator());
         readSuffixStructure.CloseFile(); 
