@@ -120,16 +120,17 @@
 
 				<tr>
 					<td class="buttons"><br />
+					<%-- 
 					<button class="buttonSpace"
 							onclick="setSelection('VA','${HighLight[0] -1 }','${(patternLength + HighLight[0]) - 2}');">Highlight</button>
+						<br /> --%>
+						<button class="buttonSpace" onclick="redraw('VA', 'naview');">Naview</button>
 						<br />
-					<button class="buttonSpace" onclick="redraw('VA', 'naview');">Naview</button>
+						<button class="buttonSpace" onclick="redraw('VA', 'circular');">Circular</button>
 						<br />
-					<button class="buttonSpace" onclick="redraw('VA', 'circular');">Circular</button>
+						<button class="buttonSpace" onclick="redraw('VA', 'radiate');">Radiate</button>
 						<br />
-					<button class="buttonSpace" onclick="redraw('VA', 'radiate');">Radiate</button>
-						<br />
-					<button class="buttonSpace" onclick="redraw('VA', 'linear');">Linear</button>
+						<button class="buttonSpace" onclick="redraw('VA', 'linear');">Linear</button>
 					</td>
 					<td><applet ID="VA" code="VARNA.class"
 							codebase="${pageContext.request.contextPath}/resources/applet/"
