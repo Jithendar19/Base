@@ -75,80 +75,109 @@
 				src="${pageContext.request.contextPath}/resources/images/logo.png"
 				alt=""></a>
 		</div>
-			<h2 align="center">The Comparison Algorithm is temporarily not available at this time. <br />We are currently undergoing a hardware upgrade.</h2>
+		<h2>Suffix Search</h2>
+		<p>
+			This page is used to compare selected files within the existing
+			database of 4666 RNA structures provided by <a
+				href="http://www.rnasoft.ca/strand/">RNASOFT</a>. To use this page,
+			select a set of RNA sequences on the left and move them all to the
+			right. You can hold command if on macOS, or control if on PC to
+			select more than one RNA at a time. <br /> The naming convention
+			used with these files are the same naming convention that RNASOFT
+			uses on their website: 
+			<br />ASE_**** = RNase P Database
+			<br />CRW_**** = Gutell Lab CRW Site
+			<br />NDB_**** = Nucleic Acid Database
+			<br />PDB_**** = RCSB Protein Data Bank
+			<br />RFA_**** = Rfam Database
+			<br />SPR_**** = Sprinzl tRNA Database
+			<br />SRP_**** = SRP Database
+			<br />TMR_**** = tmRNA Database
 
-		<div id="featured" align="center">
-			<div>
-				<div class="article" style="width: 99%; height: 100%; text-align: center;">
-				 <form method="POST" enctype="multipart/form-data">
-					<table>
-						<tr>
-							<th>Select RNA <br />to Compare:
-							</th>
-							<th></th>
-							<th>Selected RNA</th>
-						</tr>
-						<tr>
-							<td style="height: 300;"><select id="select"
-								multiple name="select" style="height: 300px;">
-									<option disabled value=''>Please make a selection</option>
-									<c:forEach items="${fileNames}" begin="1" end="4666" varStatus="row">
-										<option id="option" value="${fileNames[row.index][0]}">${fileNames[row.index][0]}</option>
-									</c:forEach>
-							</select></td>
-							<td style="height: 300px; margin: auto; display: block;">
-								<input type="button" id="left" value="&lt;" /> 
-								<input type="button" id="right" value="&gt;" /><br /> 
-								<input type="button" id="leftall" value="&lt;&lt;" /> 
-								<input type="button" id="rightall" value="&gt;&gt;" /></td>
-							<td style="height: 300;"><select id="results"
-								multiple="multiple" name="results" style="height: 300;">
-								<option disabled value=''>Please make a selection</option>
-							</select></td>
-						</tr>
-						<tr colspan="3">
-							<td style="text-align:right">Search Type: </td>
-							<td style="text-align:left"><select id="searchType"
-								multiple name="searchType" >
-									<option value='1'>Structure-Nucleotide</option>
-									<option value='0'>Structure Only</option></select></td>
-						</tr>
-						<tr>
-							<td colspan="3" rowspan="2"><input
-								type="submit" value="Compare Selected RNA"
-								onclick="form.action='/nsf/comparisonResults';" align="middle"></input></td>
-						</tr>
-					</table>
-				</form> 
+		</p>
+		<p>Please note: the results page requires Firefox, Internet
+			Explorer, or Safari. Chrome cannot be used as it does not allow the
+			use of Java Applets, and therefore will not allow us to display the
+			RNA sequence for you.</p>
+		<h2>
+			<h2>
+				<font size="3" color="red">${msg}</font>
+			</h2>
+			<div id="featured" align="center">
+				<div>
+					<div class="article"
+						style="width: 99%; height: 100%; text-align: center;">
+						<form method="POST" enctype="multipart/form-data">
+							<table>
+								<tr>
+									<th>Select RNA <br />to Compare:
+									</th>
+									<th></th>
+									<th>Selected RNA</th>
+								</tr>
+								<tr>
+									<td style="height: 300;"><select id="select" multiple
+										name="select" style="height: 300px;">
+											<option disabled value=''>Please make a selection</option>
+											<c:forEach items="${fileNames}" begin="1" end="4666"
+												varStatus="row">
+												<option id="option" value="${fileNames[row.index][0]}">${fileNames[row.index][0]}</option>
+											</c:forEach>
+									</select></td>
+									<td style="height: 300px; margin: auto; display: block;">
+										<input type="button" id="left" value="&lt;" /> <input
+										type="button" id="right" value="&gt;" /><br /> <input
+										type="button" id="leftall" value="&lt;&lt;" /> <input
+										type="button" id="rightall" value="&gt;&gt;" />
+									</td>
+									<td style="height: 300;"><select id="results"
+										multiple="multiple" name="results" style="height: 300;">
+											<option disabled value=''>Please make a selection</option>
+									</select></td>
+								</tr>
+								<tr colspan="3">
+									<td style="text-align: right">Search Type:</td>
+									<td style="text-align: left"><select id="searchType"
+										multiple name="searchType">
+											<option value='1'>Structure-Nucleotide</option>
+											<option value='0'>Structure Only</option>
+									</select></td>
+								</tr>
+								<tr>
+									<td colspan="3" rowspan="2"><input type="submit"
+										value="Compare Selected RNA"
+										onclick="form.action='/nsf/comparisonResults';" align="middle"></input></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="footer">
+				<div>
+					<p>
+						<span>All rights reserved &copy; 2015 - <script>
+							document.write(new Date().getFullYear())
+						</script> RNA SSAC Project funded by the National Science Foundation (<a
+							href="http://www.nsf.gov/">NSF</a>).
+						</span>
+						<!-- <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> -->
+					</p>
+					<ul>
+						<li id="facebook"><a href="https://www.facebook.com/rnassac/">facebook</a>
+						</li>
+						<li id="twitter"><a href="http://www.twitter.com/">twitter</a>
+						</li>
+					</ul>
+					<p>
+						<span>VARNA: Interactive drawing and editing of the RNA
+							secondary structure K&eacute;vin Darty, Alain Denise and Yann
+							Ponty Bioinformatics, pp. 1974-1975, Vol. 25, no. 15, 2009</span>
+					</p>
 				</div>
 			</div>
-
-		</div>
-
-		<div id="footer">
-			<div>
-				<p>
-					<span>All rights reserved &copy; 2015 - <script>
-						document.write(new Date().getFullYear())
-					</script>
-						RNA SSAC Project funded by the National Science Foundation (<a
-						href="http://www.nsf.gov/">NSF</a>).
-					</span><!-- <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> -->
-				</p>
-				<ul>
-					<li id="facebook"><a
-						href="https://www.facebook.com/rnassac/">facebook</a>
-					</li>
-					<li id="twitter"><a href="http://www.twitter.com/">twitter</a>
-					</li>
-				</ul>
-				<p>
-					<span>VARNA: Interactive drawing and editing of the RNA
-						secondary structure K&eacute;vin Darty, Alain Denise and Yann Ponty
-						Bioinformatics, pp. 1974-1975, Vol. 25, no. 15, 2009</span>
-				</p>
-			</div>
-		</div>
 	</div>
 
 </body>
