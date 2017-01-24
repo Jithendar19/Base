@@ -13,7 +13,7 @@ public class SuffixIntArray {
         private int lengthOfEachRNA[]= new int[5000];
         private int SuffixArrayIndexIterator = 0;
         private int TempArray[][] = new int[3000000][3];
-        private String outputString = "#" ;
+        //private String outputString = "#" ;
         
         
         /* A dupilcate copy of the RNA pattern is created to work on it 

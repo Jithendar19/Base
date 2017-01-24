@@ -31,7 +31,7 @@
 		
 			<li class="selected">
 			
-				<a href="<c:url value="/upload"/>">Search</a>
+				<a href="<c:url value="/search"/>">Search</a>
 			</li>
 			
 		</ul>

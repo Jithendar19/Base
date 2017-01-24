@@ -36,7 +36,7 @@ Bioinformatics, pp. 1974-1975, Vol. 25, no. 15, 2009
 				Us</a></li>
 		<li class="nav-item"><a href="<c:url value="/team"/>">Team
 				Members</a></li>
-		<li class="nav-item"><a href="<c:url value="/upload"/>">Search</a></li>
+		<li class="nav-item"><a href="<c:url value="/search"/>">Search</a></li>
 
 		<li class="nav-item"><a href="<c:url value="/comparison"/>">Comparison</a></li>
 	</ul>

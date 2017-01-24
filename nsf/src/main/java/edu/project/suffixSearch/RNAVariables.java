@@ -275,7 +275,7 @@ public class RNAVariables {
     this.CompareRNAs = CompareRNAs;
     }
     
-    public void setCompareWithNucleotide(){
+    public void setCompareWithNucleotide(int CompareWithNucleotide){
     this.CompareWithNucleotide = CompareWithNucleotide;
     }
     

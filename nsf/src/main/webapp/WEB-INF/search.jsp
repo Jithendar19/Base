@@ -27,7 +27,7 @@
 				Us</a></li>
 		<li class="nav-item"><a href="<c:url value="/team"/>">Team
 				Members</a></li>
-		<li class="nav-item"><a href="<c:url value="/upload"/>">Search</a></li>
+		<li class="nav-item"><a href="<c:url value="/search"/>">Search</a></li>
 		<li class="nav-item"><a href="<c:url value="/comparison"/>">Comparison</a></li>
 	</ul>
 
@@ -79,7 +79,7 @@
 						</tr>
 						<tr>
 							<td colspan="2" style="text-align:center"><input type="submit" value="Perform Suffix Array Search"
-								onclick="form.action='/nsf/verna';"></input></td>
+								onclick="form.action='/nsf/searchResults';"></input></td>
 							<!-- <td style="text-align:left"><input type="submit" value="Regular Expression Search"
 								onclick="form.action='/nsf/uploaded';"></input></td> -->
 						</tr>

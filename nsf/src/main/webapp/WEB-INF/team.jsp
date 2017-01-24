@@ -20,7 +20,7 @@
 	    <li class="nav-item"><a href="<c:url value="/contact"/>">Contact Us</a></li>
 	    <li class="nav-item"><a href="<c:url value="/about"/>">About Us</a></li>
 	    <li class="nav-item"><a href="<c:url value="/team"/>">Team Members</a></li>
-	    <li class="nav-item"><a href="<c:url value="/upload"/>">Search</a></li>
+	    <li class="nav-item"><a href="<c:url value="/search"/>">Search</a></li>
 		<li class="nav-item"><a href="<c:url value="/comparison"/>">Comparison</a></li>
 	</ul>
 

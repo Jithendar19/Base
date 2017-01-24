@@ -26,7 +26,7 @@
 		<ul>
 			<li><a href="<c:url value="/"/>">home</a></li>
 			<li class="selected"><a href="#">about</a></li>
-			<li><a href="<c:url value="/upload"/>">RegularExp Search</a></li>
+			<li><a href="<c:url value="/search"/>">RegularExp Search</a></li>
 			<li><a href="#">Our Teams</a></li>
 			<li><a href="<c:url value="/uploadfile"/>">SuffixArraySearch</a>
 			</li>
