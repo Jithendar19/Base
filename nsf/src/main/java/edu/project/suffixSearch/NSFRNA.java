@@ -9,10 +9,10 @@ package edu.project.suffixSearch;
 
 public class NSFRNA {
 
-	public NSFRNA(RNAVariables var, String dataFilesPath) {
+	public NSFRNA(RNAVariables var) {
 
 		// Set Concatenated file name and Search file name
-		var.setConcatenatedFileName(dataFilesPath + "NewFormatConcatenated.txt");
+		var.setConcatenatedFileName("/opt/NSF_Data_Files/NewFormatConcatenated.txt");
 		// var.setSearchFileName(dataFilesPath + "searchASE.txt");
 
 		// Reading InputRNA

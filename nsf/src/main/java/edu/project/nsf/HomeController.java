@@ -47,7 +47,7 @@ public class HomeController {
 	// ************************************************************************************************************************//
 
 	RNAVariables var = new RNAVariables();
-	NSFRNA a = new NSFRNA(var, path);
+	NSFRNA a = new NSFRNA(var);
 
 	// **********************************************************************//
 	// Loading the array with filename, nucleotide and structure into memory.//
