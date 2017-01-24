@@ -15,7 +15,7 @@ import dk.brics.automaton.RegExp;
 import dk.brics.automaton.RunAutomaton;
 import edu.project.nsf.RegularExpPojo;
 
-import java.awt.Color;
+//import java.awt.Color;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -40,9 +40,9 @@ import java.util.logging.Logger;
 //import java.util.regex.Pattern;
 import javax.swing.*;
 import javax.swing.text.BadLocationException;
-import javax.swing.text.DefaultHighlighter;
+//import javax.swing.text.DefaultHighlighter;
 import javax.swing.text.Document;
-import javax.swing.text.Highlighter;
+//import javax.swing.text.Highlighter;
 //import javax.swing.text.JTextComponent;
 ////////////////////////////////////////////////////////////////////////////////
 

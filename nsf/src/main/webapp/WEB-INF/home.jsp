@@ -29,7 +29,7 @@
 				Us</a></li>
 		<li class="nav-item"><a href="<c:url value="/team"/>">Team
 				Members</a></li>
-		<li class="nav-item"><a href="<c:url value="/upload"/>">Search</a></li>
+		<li class="nav-item"><a href="<c:url value="/search"/>">Search</a></li>
 		<li class="nav-item"><a href="<c:url value="/comparison"/>">Comparison</a></li>
 	</ul>
 	<input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -77,7 +77,7 @@
 						<h3>SEARCH</h3>
 						<div>
 							<p>Search for the RNA using substring or pattern.</p>
-							<a href="<c:url value="/upload"/>" class="more">read more</a>
+							<a href="<c:url value="/search"/>" class="more">read more</a>
 						</div> <img
 						src="${pageContext.request.contextPath}/resources/images/suffixArray.png"
 						alt="">
