@@ -13,15 +13,15 @@
 <meta charset="UTF-8">
 <title>NSF RNA SSAC</title>
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/resources/css/style.css"
+	href="${pageContext.request.contextPath}${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/css/style.css"
 	type="text/css">
 <link rel="icon"
-	href="${pageContext.request.contextPath}/resources/images/logo.png">
+	href="${pageContext.request.contextPath}${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/images/logo.png">
 </head>
 <body>
 	<div id="header">
 		<a href="<c:url value="/"/>" class="logo"><img
-			src="${pageContext.request.contextPath}/resources/images/logo.png"
+			src="${pageContext.request.contextPath}${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/images/logo.png"
 			alt=""></a>
 		<ul>
 			<li><a href="<c:url value="/"/>">home</a></li>

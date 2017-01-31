@@ -13,6 +13,10 @@
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/resources/css/style.css"
 	type="text/css">
+<link rel="stylesheet"
+	media="screen and (min-width: 0px) and (max-width: 1178px)"
+	href="${pageContext.request.contextPath}/resources/css/styleMedium.css"
+	type="text/css">
 <link rel="icon"
 	href="${pageContext.request.contextPath}/resources/images/logo.png">
 </head>
@@ -21,8 +25,7 @@
 		<li class="nav-item"><a href="<c:url value="/"/>">Home</a></li>
 		<li class="nav-item"><a href="<c:url value="/contact"/>">Contact
 				Us</a></li>
-		<li class="nav-item"><a href="<c:url value="/about"/>">About
-				Us</a></li>
+		<li class="nav-item"><a href="<c:url value="/about"/>">About Us</a></li>
 		<li class="nav-item"><a href="<c:url value="/team"/>">Team
 				Members</a></li>
 		<li class="nav-item"><a href="<c:url value="/search"/>">Search</a></li>
@@ -34,11 +37,34 @@
 
 	<div class="site-wrap">
 		<!-- insert the rest of your page markup here -->
-
+		<div class="focus">
 		<div id="header">
-			<a href="<c:url value="/"/>"><img class="logo"
+			<figure class="headImages">
+				<a href="http://www.tamuc.edu"><img class="tamucLogo" style="max-width: 600px"
+					src="${pageContext.request.contextPath}/resources/images/LionLogo.png"
+					alt="" ></a>
+
+
+				<a href="<c:url value="/"/>"><img class="logo" 
 				src="${pageContext.request.contextPath}/resources/images/logo.png"
-				alt=""></a>
+				alt="" ></a>
+		
+				<a href="http://tamuc.edu"><img class="tamlion" src="${pageContext.request.contextPath}/resources/images/ImageRight.jpg" ></a>
+
+
+		</figure>	
+
+		<nav class="HamburgerStyle">
+
+			<a href="<c:url value="/"/>">Home</a>
+			<a href="<c:url value="/contact"/>">Contact Us</a>
+			<a href="<c:url value="/about"/>">About Us</a>
+			<a href="<c:url value="/team"/>">Team Members</a>
+			<a href="<c:url value="/search"/>">Search</a>
+			<a href="<c:url value="/comparison"/>">Comparison</a>
+
+
+		</nav>
 		</div>
 		<div id="body">
 			<div class="content">
@@ -60,15 +86,16 @@
 				</form>
 			</div>
 		</div>
+		</div>
 		<div id="footer">
 			<div>
 				<p>
-					<span>All rights reserved &copy; 2015 - <script>
+					<center><span>All rights reserved &copy; 2015 - <script>
 						document.write(new Date().getFullYear())
 					</script>
 						RNA SSAC Project funded by the National Science Foundation (<a
 						href="http://www.nsf.gov/">NSF</a>).
-					</span><!-- <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> -->
+					</span></center><!-- <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> -->
 				</p>
 				<ul>
 					<li id="facebook"><a href="https://www.facebook.com/rnassac/">facebook</a>

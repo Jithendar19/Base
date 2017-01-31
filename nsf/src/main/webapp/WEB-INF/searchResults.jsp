@@ -21,10 +21,10 @@ Bioinformatics, pp. 1974-1975, Vol. 25, no. 15, 2009
 
 <title>RNA SSAC | Search Results</title>
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/resources/css/style.css"
+	href="${pageContext.request.contextPath}${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/css/style.css"
 	type="text/css">
 <link rel="icon"
-	href="${pageContext.request.contextPath}/resources/images/logo.png">
+	href="${pageContext.request.contextPath}${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/images/logo.png">
 </head>
 <body>
 
@@ -50,7 +50,7 @@ Bioinformatics, pp. 1974-1975, Vol. 25, no. 15, 2009
 
 		<div id="header">
 			<a href="<c:url value="/"/>"><img class="logo"
-				src="${pageContext.request.contextPath}/resources/images/logo.png"
+				src="${pageContext.request.contextPath}${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/images/logo.png"
 				alt=""></a>
 			
 		</div>
@@ -174,7 +174,7 @@ Bioinformatics, pp. 1974-1975, Vol. 25, no. 15, 2009
 					
 				
 					<td><applet ID="VA" code="VARNA.class"
-							codebase="${pageContext.request.contextPath}/resources/applet/"
+							codebase="${pageContext.request.contextPath}${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/applet/"
 							archive="varna.jar" width="800" height="700"
 							style="text-align: right">
 							<param name="java_version" value="1.5+">

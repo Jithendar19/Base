@@ -9,10 +9,10 @@
 <meta charset="UTF-8">
 <title>RNA SSAC | Comparison Results</title>
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/resources/css/style.css"
+	href="${pageContext.request.contextPath}${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/css/style.css"
 	type="text/css">
 <link rel="icon"
-	href="${pageContext.request.contextPath}/resources/images/logo.png">
+	href="${pageContext.request.contextPath}${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/images/logo.png">
 </head>
 
 
@@ -40,7 +40,7 @@
 
 		<div id="header">
 			<a href="./"><img class="logo"
-				src="${pageContext.request.contextPath}/resources/images/logo.png"
+				src="${pageContext.request.contextPath}${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/images/logo.png"
 				alt=""></a>
 
 
@@ -132,7 +132,7 @@
 					<button class="buttonSpace" onclick="redraw('VA', 'linear');">Linear</button>
 					</td>
 					<td><applet ID="VA" code="VARNA.class"
-							codebase="${pageContext.request.contextPath}/resources/applet/"
+							codebase="${pageContext.request.contextPath}${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/applet/"
 							archive="varna.jar" width="800" height="600"
 							style="text-align: right">
 							<param name="java_version" value="1.5+">
