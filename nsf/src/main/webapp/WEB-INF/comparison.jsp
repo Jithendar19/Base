@@ -14,11 +14,49 @@
 	href="${pageContext.request.contextPath}/resources/css/style.css"
 	type="text/css">
 <link rel="stylesheet"
-	media="screen and (min-width: 0px) and (max-width: 1178px)"
+	media="screen and (min-width: 851px) and (max-width: 1178px)"
 	href="${pageContext.request.contextPath}/resources/css/styleMedium.css"
+	type="text/css">
+<link rel="stylesheet"
+	media="screen and (min-width: 0px) and (max-width: 850px)"
+	href="${pageContext.request.contextPath}/resources/css/small.css"
 	type="text/css">
 <link rel="icon"
 	href="${pageContext.request.contextPath}/resources/images/logo.png">
+<!-- stops some background problems  -->
+<script>
+
+function ShowBod()
+{
+	var element = document.getElementById("vis");
+	var bod = document.body.style;
+	var check = document.getElementById("nav-trigger");
+	
+	if(check.checked)
+	{
+	bod.backgroundImage = "url(../resources/images/bg.png)";
+	element.style.display = "block";
+	}
+	else
+	{
+		bod.background = "none";
+		element.style.display = "none";
+	}
+}
+
+window.onload = function(){
+	var check = document.getElementById("nav-trigger");
+	var element = document.getElementById("vis");
+	var bod = document.body.style;
+	check.checked = false;
+	bod.background = "none";
+	element.style.display = "none";
+	
+}
+
+</script>
+<!-- ////////////////////////////////////// -->
+
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
@@ -53,7 +91,7 @@
 </script>
 </head>
 <body>
-	<ul class="navigation">
+	<ul id="vis" class="navigation">
 		<li class="nav-item"><a href="<c:url value="/"/>">Home</a></li>
 		<li class="nav-item"><a href="<c:url value="/contact"/>">Contact
 				Us</a></li>
@@ -64,7 +102,7 @@
 		<li class="nav-item"><a href="<c:url value="/comparison"/>">Comparison</a></li>
 	</ul>
 
-	<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+	<input type="checkbox" id="nav-trigger" onclick="ShowBod()" class="nav-trigger" />
 	<label for="nav-trigger"></label>
 
 	<div class="site-wrap">

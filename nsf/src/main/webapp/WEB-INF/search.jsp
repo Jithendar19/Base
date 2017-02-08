@@ -9,18 +9,56 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=.4, minimum-scale=.4, maximum-scale=.5, user-scalable=yes"/> <!--320-->
 <title>RNA SSAC | Search</title>
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/resources/css/style.css"
 	type="text/css">
 <link rel="stylesheet"
-	media="screen and (min-width: 0px) and (max-width: 1178px)"
+	media="screen and (min-width: 851px) and (max-width: 1178px)"
 	href="${pageContext.request.contextPath}/resources/css/styleMedium.css"
 	type="text/css">
+<link rel="stylesheet"
+	media="screen and (min-width: 0px) and (max-width: 850px)"
+	href="${pageContext.request.contextPath}/resources/css/small.css"
+	type="text/css">
 <link rel="icon" href="${pageContext.request.contextPath}/resources/images/logo.png">
+
+
+<script>
+
+function ShowBod()
+{
+	var element = document.getElementById("vis");
+	var bod = document.body.style;
+	var check = document.getElementById("nav-trigger");
+	
+	if(check.checked)
+	{
+	bod.backgroundImage = "url(../resources/images/bg.png)";
+	element.style.display = "block";
+	}
+	else
+	{
+		bod.background = "none";
+		element.style.display = "none";
+	}
+}
+
+window.onload = function(){
+	var check = document.getElementById("nav-trigger");
+	var element = document.getElementById("vis");
+	var bod = document.body.style;
+	check.checked = false;
+	bod.background = "none";
+	element.style.display = "none";
+	
+}
+
+</script>
 </head>
 <body>
-	<ul class="navigation">
+	<ul id="vis" class="navigation">
 		<li class="nav-item"><a href="<c:url value="/"/>">Home</a></li>
 		<li class="nav-item"><a href="<c:url value="/contact"/>">Contact
 				Us</a></li>
@@ -31,7 +69,7 @@
 		<li class="nav-item"><a href="<c:url value="/comparison"/>">Comparison</a></li>
 	</ul>
 
-	<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+	<input type="checkbox" onclick="ShowBod()" id="nav-trigger" class="nav-trigger" />
 	<label for="nav-trigger"></label>
 
 	<div class="site-wrap">

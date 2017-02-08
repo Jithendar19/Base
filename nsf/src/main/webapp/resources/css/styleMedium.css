@@ -10,7 +10,8 @@
 
 } */
 body {
-	background-image: url(../images/bg.png);
+	/*background-image: url(../images/bg.png);*/
+	background-color:white;
 	font-family: Verdana;
 	font-size: 14px;
 	font-weight: normal;
@@ -18,8 +19,11 @@ body {
 	margin: 0;
 	min-width: 100%;
 	padding: 0;
-	overflow-x: hidden;
+	overflow-x: scroll;
 	height: auto;
+}
+#vis{
+	display:none;
 }
 
 /* Navigation Menu - Background */
@@ -95,7 +99,7 @@ body {
 }
 
 .nav-trigger {
-	position: absolute;
+	position: fixed;
 	clip: rect(0, 0, 0, 0);
 }
 
@@ -131,17 +135,18 @@ body {
 
 
 label[for="nav-trigger"] {
-	position: absolute;
+	position: fixed;
 	display: block;
 	top: 15px;
 	left: 15px;
 	z-index: 2;
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 	cursor: pointer;
 	background-image:
 		url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
 	background-size: contain;
+	overflow:hidden;
 }
 
 .nav-trigger:checked+label {
@@ -169,24 +174,28 @@ label[for="nav-trigger"] {
 figure{
 	width:auto;
 	display: block;
-	margin-left: auto;
-	margin-right:5%;
+	margin-left: 5%;
+	margin-right:auto;
+	position: relative;
 }
 .tamucLogo{
 
-	width:150px;
-	height:84px;
+	width:auto;/*150 84*/
+	height:auto;
+	max-height:84px;
 }
 
 
-.logo {
-	height: 84px;
-	width: 296px;
+.logo {/*84 296*/
+	height: auto;
+	width: auto;
+	max-height:84px;
 }
 
-.tamlion{
-	height:84px;
-	width:150px;
+.tamlion{/*84 150*/
+	max-height:84px;
+	height:auto;
+	width:auto;
 	border:2px solid gold;
 }
 #varna {
@@ -220,7 +229,7 @@ figure{
 	width:100%;
 	box-shadow: 0px 0px  2em #000000;
 	position: relative;
-	overflow:hidden;
+	overflow-x:scroll;
 }
 
 #featured {

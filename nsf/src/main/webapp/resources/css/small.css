@@ -11,7 +11,7 @@
 } */
 body {
 	/*background-image: url(../images/bg.png);*/
-	background:none;
+	background-color:white;
 	font-family: Verdana;
 	font-size: 14px;
 	font-weight: normal;
@@ -25,7 +25,6 @@ body {
 #vis{
 	display:none;
 }
-
 /* Navigation Menu - Background */
 .navigation {
 	/* critical sizing and position styles */
@@ -38,6 +37,7 @@ body {
 	z-index: 0;
 	/* non-critical appearance styles */
 	list-style: none;
+	background-color:white;
 	background-image: url(../images/bg.png);
 }
 
@@ -54,8 +54,8 @@ body {
 	/* non-critical appearance styles */
 	display: block;
 	padding: 1em;
-	background: linear-gradient(135deg, rgba(158, 158, 158, .65) 0%,
-		rgba(0, 0, 0, 0.65) 100%);
+	background: linear-gradient(135deg, rgba(158, 158, 158, .90) 0%,
+		rgba(0, 0, 0, 0.90) 100%);
 	color: white;
 	font-size: 1.2em;
 	text-decoration: none;
@@ -98,43 +98,22 @@ body {
 }
 
 .nav-trigger {
-	position: absolute;
+	position: fixed;
 	clip: rect(0, 0, 0, 0);
 }
 
 .HamburgerStyle{
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	text-decoration: none;
-}
-
-.HamburgerStyle a{
-	padding-left: 1em;
-	padding-right: 1em;
-	text-decoration: none;
-
-}
-
-.HamburgerStyle a:visited{
-	color:blue;
-
-}
-
-.HamburgerStyle a:hover{
-	background-color: rgba(255,242,0,.9);
-	padding-left: 2em;
-	padding-right: 2em;
+	display: none;
 }
 
 .headImages a{
 	padding-left: 30px;
 	padding-right:30px;
+	position: relative;
 }
 
 .ContactInfo{
 	text-align: center;
-	width:1px;
 }
 
 .ContactInfo H4{
@@ -155,25 +134,30 @@ body {
 
 
 label[for="nav-trigger"] {
-	position: absolute;
-	display: none;
+	position: fixed;
+	display: block;
 	top: 15px;
 	left: 15px;
 	z-index: 2;
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	cursor: pointer;
 	background-image:
 		url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
 	background-size: contain;
+	overflow:hidden;
 }
 
 .nav-trigger:checked+label {
-	left: 0px;
+	left: 215px;
+}
+
+.nav-trigger:checked{
+	background-color:black;
 }
 
 .nav-trigger:checked ~ .site-wrap {
-	left: 0px;
+	left: 200px;
 	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -193,25 +177,28 @@ label[for="nav-trigger"] {
 figure{
 	width:auto;
 	display: block;
-	margin-left: auto;
-	margin-right:5%;
+	margin-left: 3%;
+	margin-right:auto;
 	white-space:nowrap;
 }
 .tamucLogo{
 
-	width:150px;
-	height:84px;
+	width:auto;/*150 84*/
+	height:auto;
+	max-height:84px;
 }
 
 
-.logo {
-	height: 84px;
-	width: 296px;
+.logo {/*84 296*/
+	height: auto;
+	width: auto;
+	max-height:84px;
 }
 
-.tamlion{
-	height:84px;
-	width:150px;
+.tamlion{/*84 150*/
+	max-height:84px;
+	height:auto;
+	width:auto;
 	border:2px solid gold;
 }
 #varna {
@@ -240,12 +227,12 @@ figure{
 }
 .focus{
 	background-color: rgba(255,255,255,.8);
-	margin-left: auto ;
-	margin-right:auto;
-	width:1100px;
-	height:auto;
+	margin-left: 0;
+	margin-right:0;
+	width:100%;
 	box-shadow: 0px 0px  2em #000000;
 	position: relative;
+	overflow:hidden;
 }
 
 #featured {
@@ -277,8 +264,7 @@ figure{
 #featured div .article {
 	color: black;
 	float: left;
-	margin: 0;
-	
+	margin: auto;
 	padding: 0 10px;
 	width: 99%;
 	text-align: center;
@@ -470,7 +456,6 @@ figure{
 	padding: 0 0 0 20px;
 }
 
-
 #body .sidebar ul li {
 	color: black;
 	font-size: 12px;
@@ -525,18 +510,12 @@ figure{
 	text-decoration: underline;
 }
 
-.FWAH{
-	width:100%;
-	height:auto;
-}
-
 #body .content {
 	float: left;
 	margin: 0px 0px 10px 0px;
 	padding: 0;
-	width: 670;
+	width: 678px;
 	height: auto;
-	position: relative;
 }
 
 #body .content>img {
@@ -919,7 +898,7 @@ figure{
 }
 
 #body #sidebar {
-	float: right;
+	float: left;
 	margin: 0;
 	padding: 0;
 	width: 288px;
