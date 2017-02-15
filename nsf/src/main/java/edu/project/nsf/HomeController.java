@@ -262,7 +262,13 @@ public class HomeController {
 		System.out.println("IP Address: " + request.getRemoteAddr() + " has accessed the Team Page.");
 		return "team";
 	}
-
+	//publications page
+	@RequestMapping(value = "/publications", method = RequestMethod.GET)
+	public String publications(Model model, HttpServletRequest request) {
+		System.out.println("IP Address: " + request.getRemoteAddr() + " has accessed the Publications Page.");
+		return "Publications";
+	}
+	
 	@RequestMapping(value = "/comparison", method = RequestMethod.GET)
 	public String provideComparisonInfo(Model model, HttpServletRequest request) {
 		System.out.println("IP Address: " + request.getRemoteAddr() + " has accessed the Comparison Page.");

@@ -67,6 +67,7 @@ window.onload = function(){
 				Members</a></li>
 		<li class="nav-item"><a href="<c:url value="/search"/>">Search</a></li>
 		<li class="nav-item"><a href="<c:url value="/comparison"/>">Comparison</a></li>
+		<li class="nav-item"><a href="<c:url value="/publications"/>">Publications</a></li>
 	</ul>
 
 	<input type="checkbox" id="nav-trigger" onclick="ShowBod()" class="nav-trigger" />
@@ -98,7 +99,7 @@ window.onload = function(){
 			<a href="<c:url value="/team"/>">Team Members</a>
 			<a href="<c:url value="/search"/>">Search</a>
 			<a href="<c:url value="/comparison"/>">Comparison</a>
-
+			<a href="<c:url value="/publications"/>">Publications</a>
 
 		</nav>
 	</div>
@@ -169,7 +170,7 @@ window.onload = function(){
 						<td>
 							<section>
 								<H4>Student Researcher - Undergraduate Student</H4>
-								<figure><img src="${pageContext.request.contextPath}/resources/images/lionBG.png" alt="Kieth's Pic" width="170" height="196"></figure>
+								<figure><img src="${pageContext.request.contextPath}/resources/images/Keith.jpg" alt="Kieth's Pic" width="170" height="196"></figure>
 								<p>
 									Keith Monschke
 									<br />TAMUC: Computer Science &amp; Mathematics

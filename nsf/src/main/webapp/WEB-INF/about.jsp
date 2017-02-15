@@ -72,6 +72,7 @@ window.onload = function(){
 				Members</a></li>
 		<li class="nav-item"><a href="<c:url value="/search"/>">Search</a></li>
 		<li class="nav-item"><a href="<c:url value="/comparison"/>">Comparison</a></li>
+		<li class="nav-item"><a href="<c:url value="/publications"/>">Publications</a></li>
 	</ul>
 
 	<input type="checkbox" id="nav-trigger" onclick="ShowBod()" class="nav-trigger" />
@@ -104,7 +105,7 @@ window.onload = function(){
 			<a href="<c:url value="/team"/>">Team Members</a>
 			<a href="<c:url value="/search"/>">Search</a>
 			<a href="<c:url value="/comparison"/>">Comparison</a>
-
+			<a href="<c:url value="/publications"/>">Publications</a>
 
 		</nav>
 		</div>

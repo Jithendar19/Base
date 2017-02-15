@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE web-app PUBLIC
@@ -7,11 +8,13 @@
 <%@ page session="false"%>
 
 <html>
+
 <head>
-<meta charset="UTF-8">
+<title>RNA SSAC | Publications</title>
 <meta name="viewport" content="width=device-width, initial-scale=.4, minimum-scale=.4, maximum-scale=.5, user-scalable=yes"/> <!--320-->
-<title>RNA SSAC | Contact Us</title>
+<meta charset="UTF-8">
 <link rel="stylesheet"
+	media="screen and (min-device-width: 1179px)"
 	href="${pageContext.request.contextPath}/resources/css/style.css"
 	type="text/css">
 <link rel="stylesheet"
@@ -24,7 +27,6 @@
 	type="text/css">
 <link rel="icon"
 	href="${pageContext.request.contextPath}/resources/images/logo.png">
-
 <script>
 
 function ShowBod()
@@ -56,9 +58,14 @@ window.onload = function(){
 }
 
 </script>
+
 </head>
+
 <body>
-	<ul id="vis" class="navigation">
+	<!-- Links for the Navigation Menu -->
+	
+	<ul  id="vis" class="navigation">
+	
 		<li class="nav-item"><a href="<c:url value="/"/>">Home</a></li>
 		<li class="nav-item"><a href="<c:url value="/contact"/>">Contact
 				Us</a></li>
@@ -69,15 +76,17 @@ window.onload = function(){
 		<li class="nav-item"><a href="<c:url value="/comparison"/>">Comparison</a></li>
 		<li class="nav-item"><a href="<c:url value="/publications"/>">Publications</a></li>
 	</ul>
-
 	<input type="checkbox" id="nav-trigger" onclick="ShowBod()" class="nav-trigger" />
 	<label for="nav-trigger"></label>
 
+	<!-- Code to keep the rest of the site separate from the Navigation Menu -->
 	<div class="site-wrap">
-		<!-- insert the rest of your page markup here -->
+
+		<!-- Logo -->
 		<div class="focus">
 		<div id="header">
-			<figure class="headImages">
+		
+		<figure class="headImages">
 				<a href="http://www.tamuc.edu"><img class="tamucLogo" style="max-width: 600px"
 					src="${pageContext.request.contextPath}/resources/images/LionLogo.png"
 					alt="" ></a>
@@ -87,7 +96,7 @@ window.onload = function(){
 				src="${pageContext.request.contextPath}/resources/images/logo.png"
 				alt="" ></a>
 		
-				<a href="http://tamuc.edu"><img class="tamlion" src="${pageContext.request.contextPath}/resources/images/ImageRight.jpg" ></a>
+				  <a href="http://tamuc.edu"><img class="tamlion" src="${pageContext.request.contextPath}/resources/images/ImageRight.jpg" ></a>
 
 
 		</figure>	
@@ -96,35 +105,42 @@ window.onload = function(){
 
 			<a href="<c:url value="/"/>">Home</a>
 			<a href="<c:url value="/contact"/>">Contact Us</a>
-			<a href="<c:url value="/about"/>">About Us</a>
+			<a href="<c:url value="/contact"/>">About Us</a>
 			<a href="<c:url value="/team"/>">Team Members</a>
 			<a href="<c:url value="/search"/>">Search</a>
 			<a href="<c:url value="/comparison"/>">Comparison</a>
 			<a href="<c:url value="/publications"/>">Publications</a>
 
+
 		</nav>
 		</div>
-		<div id="body">
-			<div class="content">
-				<!-- <img src="${pageContext.request.contextPath}/resources/images/telephone.jpg" alt=""> -->
-				<h2>send us a message</h2>
-				<form action="#">
-					<label for="firstName"> <span>first name*</span> <input
-						type="text" name="first" id="firstName"></label> <label
-						for="lastName"> <span>last name*</span> <input type="text"
-						name="last" id="lastName"></label> <label for="email"> <span>email*</span>
-						<input type="text" name="email" id="email"></label> <label
-						for="phoneNumber"> <span>Phone Number</span> <input
-						type="text" name="phone" id="phoneNumber"></label> <label
-						for="subject"> <span>subject*</span> <input type="text"
-						name="subject" id="subject"></label> <label for="message">
-						<span>message</span> <textarea name="" id="message" cols="30"
-							rows="10"></textarea>
-					</label> <input type="submit" value="" id="submit">
-				</form>
+
+		<!-- Code for body of website -->
+
+		<!-- Left side of body -->
+		<div>
+			
+			<article id="publish">
+			<H2 class="center">Publications</H2>
+				
+			<p class="Citation">
+				Fatma Abu Hawas and Abdullah N. Arslan. "Fast Regular Expression Matching in a Large Static Text ".2016 International
+				Conference on Computational Science and Computational Intelligence. Proceedings of IEEE CPS, 
+				pp. 1304-1309. DOI 10.1109/CSCI.2016.243
+			</p>
+			
+			<p class="Citation">
+			Abdullah N. Arslan, Jithendar Anandan, Eric Fry, Rabindra Pandey, Keith Monschke. "A New Structure Representation for RNA and Fast RNA Substructure Search". 
+			2016 International  Conference on Computational Science and Computational Intelligence. Proceedings of IEEE CPS,  pp. 1226-1231, DOI 10.1109/CSCI.2016.230
+			
+			</p>
+			<p class="Citation">
+			Jithendar Anandan, Eric Fry, Keith Monschke, Abdullah N. Arslan. "A Fast Algorithm for Finding Largest Common Substructures in Multiple RNAs " 
+			(in print) 9th International Conference on Bioinformatics and Computational Biology - BICOB 2017
+			</p>
+			</article>
 			</div>
-		</div>
-		</div>
+			</div>
 		<div id="footer">
 			<div>
 				<p>
@@ -141,9 +157,8 @@ window.onload = function(){
 					<li id="twitter"><a href="http://www.twitter.com/">twitter</a>
 					</li>
 				</ul>
-
 			</div>
 		</div>
-	</div>
+		</div>
 </body>
 </html>

@@ -132,7 +132,22 @@ body {
 	font-weight: normal;
 }
 
-
+#publish{
+	width:50%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size:20px;
+	padding:40px;
+}
+.Citation{
+	text-align:left;
+	white-space:wrap;
+	padding-left:50px;
+	text-indent:-50px;
+	margin-bottom: 50px;
+}
 label[for="nav-trigger"] {
 	position: fixed;
 	display: block;
@@ -173,11 +188,17 @@ label[for="nav-trigger"] {
 	padding-bottom: 1em;
 	position: relative;
 }
-
+.center{
+	text-align:center;
+}
+.publish{
+	font-size:25px;
+	text-align:left;
+}
 figure{
 	width:auto;
 	display: block;
-	margin-left: 3%;
+	margin-left: auto;
 	margin-right:auto;
 	white-space:nowrap;
 }

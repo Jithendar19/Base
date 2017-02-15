@@ -26,6 +26,22 @@ body {
 	display:none;
 }
 
+#publish{
+	width:50%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size:20px;
+	padding:40px;
+}
+.Citation{
+	text-align:left;
+	white-space:wrap;
+	padding-left:50px;
+	text-indent:-50px;
+	margin-bottom: 50px;
+}
 /* Navigation Menu - Background */
 .navigation {
 	/* critical sizing and position styles */
@@ -174,7 +190,7 @@ label[for="nav-trigger"] {
 figure{
 	width:auto;
 	display: block;
-	margin-left: 5%;
+	margin-left: auto;
 	margin-right:auto;
 	position: relative;
 }
@@ -229,9 +245,11 @@ figure{
 	width:100%;
 	box-shadow: 0px 0px  2em #000000;
 	position: relative;
-	overflow-x:scroll;
+	overflow-x:hidden;
 }
-
+.center{
+	text-align:center;
+}
 #featured {
 	background: none;
 	padding: 0;
