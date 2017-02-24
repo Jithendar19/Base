@@ -23,7 +23,7 @@ public class read {
 		 	  //String st=new String("(~"");
 		 	  
 		 	  
-				inputStream = new FileInputStream("/opt/NSF_Data_Files/NewPatternsFile.txt");
+				inputStream = new FileInputStream("/Users/ericfry/Library/Mobile Documents/com~apple~CloudDocs/School/NSF Project/SharedFolderBackup/NSF_Data_FilesNSF_Data_Files/NewPatternsFile.txt");
 	            sc = new Scanner(inputStream, "UTF-8");
 	            for(int j=0;j<100;j++)
 	            {	
