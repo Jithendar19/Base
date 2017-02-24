@@ -24,7 +24,14 @@
 	href="${pageContext.request.contextPath}/resources/css/small.css"
 	type="text/css">
 	<link rel="icon" href="${pageContext.request.contextPath}/resources/images/logo.png">
+<!-- here is where the jquery starts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/JQuery/okfocus-okshadow-183cd27/src/okshadow.js" type="text/javascript"></script>
+
+<!-- here is where it ends -->
 <script>
 
 function ShowBod()
@@ -103,9 +110,10 @@ window.onload = function(){
 
 		</nav>
 	</div>
+	<img class="FWAH" src="${pageContext.request.contextPath}/resources/images/campus.png" alt="">
 	<div id="body">
 		
-			<img class="FWAH" src="${pageContext.request.contextPath}/resources/images/campus.png" alt="">
+			
 			<h2>Our Team</h2>
 			<div class="section">
 				<!--/////////////////////TEAM MEMBERS///////////////////////////////////-->
@@ -127,12 +135,11 @@ window.onload = function(){
 
 						<th>
 							<section>
-								<H4>Student Researcher - Undergraduate</H4>
+								<H4>Student Researcher - Undergraduate Student</H4>
 								<figure><img src="${pageContext.request.contextPath}/resources/images/rabin.jpg" alt="Rabin's pic" width="170" height="196"></figure>
 								<p>
 									Rabindra Raj Pandey
 									<br />TAMUC: Computer Science
-									<br />Phone: +1 (817) 271-3281
 									<br />E-mail: <a href="mailto:rrj.pandey@gmail.com">rrj.pandey@gmail.com</a>
 									<br />Hours: Mondays to Fridays 7:00am - 6:00pm
 								</p>
@@ -146,7 +153,6 @@ window.onload = function(){
 								<p>
 									Eric Fry
 									<br />TAMUC: Computer Science &amp; Mathematics
-									<br />Phone: +1 (903) 583-0238
 									<br /><a href="mailto:efry1@leomail.tamuc.edu">efry1@leomail.tamuc.edu</a>
 									<br />Hours: Monday-Fridays 8:00am - 6:00pm
 								</p>
@@ -156,12 +162,11 @@ window.onload = function(){
 					<tr>
 						<td>
 							<section>
-								<H4>Student Researcher - Graduate Student</H4>
+								<H4>Student Researcher - <br>Graduate Student</H4>
 								<figure><img src="${pageContext.request.contextPath}/resources/images/jitu.jpg" alt="Jithendar's pic" width="170" height="196"></figure>
 								<p>
 									Jithendar Anandan
 									<br />TAMUC, Computer Science
-									<br />Phone: +1 (903) 442-1741
 									<br />E-mail: <a href="mailto:janandan@leomail.tamuc.edu">janandan@leomail.tamuc.edu</a>
 									<br />Hours: Monday-Fridays 7:00am - 6:00pm
 								</p>
@@ -174,7 +179,6 @@ window.onload = function(){
 								<p>
 									Keith Monschke
 									<br />TAMUC: Computer Science &amp; Mathematics
-									<br />Phone: +1 (903) 583-0238
 									<br /><a href="mailto:kmonschke@leomail.tamuc.edu">kmonschke@leomail.tamuc.edu</a>
 									<br />Hours: Monday-Fridays 7:00am - 6:00pm
 								</p>
@@ -187,9 +191,35 @@ window.onload = function(){
 								<p>
 									Jason Bowerman
 									<br />TAMUC: Computer Science &amp; Mathematics
-									<br />Phone: +1 (903) 422-1808
 									<br /><a href="mailto:jbowerman1@leomail.tamuc.edu">jbowerman1@leomail.tamuc.edu</a>
 									<br />Hours: Monday-Fridays 8:00am - 6:00pm
+								</p>
+							</section>
+						</td>
+						</tr>
+						<tr>
+						<td>
+							<section>
+								<H4>Student Researcher - <br>Graduate Student</H4>
+								<figure><img src="${pageContext.request.contextPath}/resources/images/Shanthi.JPG" alt="Shanthi's Pic" width="170" height="196"></figure>
+								<p>
+									Shanthi Kollu
+									<br />TAMUC: Computer Science
+									<br /><a href="mailto:skollu4@leomail.tamuc.edu">skollu4@leomail.tamuc.edu</a>
+									<br />Hours: Monday-Fridays 9:00am - 5:00pm
+								</p>
+							</section>
+						</td>
+						
+						<td>
+							<section>
+								<H4>Student Researcher - <br>Graduate Student</H4>
+								<figure><img src="${pageContext.request.contextPath}/resources/images/Nitin.jpg" alt="Nitin's Pic" width="170" height="196"></figure>
+								<p>
+									Nitin Ganneboina
+									<br />TAMUC: Computer Science
+									<br /><a href="nganneboina@leomail.tamuc.edu">nganneboina@leomail.tamuc.edu</a>
+									<br />Hours: Monday-Fridays 9:00am - 5:00pm
 								</p>
 							</section>
 						</td>
@@ -200,9 +230,20 @@ window.onload = function(){
 			</div>
 			
 		
-		 
+	<script type="text/javascript">
+	$("document").ready(function(){
+		
+		
+		 	
+    	$('.ContactInfo td,th').okshadow();
+    		
+	});
+</script>
 	</div>
 	</div>
+	
+	
+	
 	<div id="footer">
 		<div>
 			<p>

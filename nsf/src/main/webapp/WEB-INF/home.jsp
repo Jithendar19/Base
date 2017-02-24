@@ -49,7 +49,7 @@ function ShowBod()
 
 window.onload = function(){
 	var check = document.getElementById("nav-trigger");
-	var element = document.getElementById("vis");
+	var element = document.getElementById("vis");	
 	var bod = document.body.style;
 	check.checked = false;
 	bod.background = "none";
@@ -85,7 +85,7 @@ window.onload = function(){
 		<!-- Logo -->
 		<div class="focus">
 		<div id="header">
-		<figure class="headImages">
+		<figure  class="headImages">
 				<a href="http://www.tamuc.edu"><img class="tamucLogo" style="max-width: 600px"
 					src="${pageContext.request.contextPath}/resources/images/LionLogo.png"
 					alt="" ></a>
@@ -100,7 +100,7 @@ window.onload = function(){
 
 		</figure>	
 
-		<nav class="HamburgerStyle">
+		<nav  class="HamburgerStyle">
 
 			<a href="<c:url value="/"/>">Home</a>
 			<a href="<c:url value="/contact"/>">Contact Us</a>

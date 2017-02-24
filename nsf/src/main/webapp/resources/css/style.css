@@ -107,8 +107,12 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 	text-decoration: none;
+	width:80%
 }
-
+.Citation:hover{
+	border:3px solid black;
+	
+}
 .HamburgerStyle a{
 	padding-left: 1em;
 	padding-right: 1em;
@@ -126,7 +130,9 @@ body {
 	padding-left: 2em;
 	padding-right: 2em;
 }
-
+.headImages{
+	width:80%;
+}
 .headImages a{
 	padding-left: 30px;
 	padding-right:30px;
@@ -134,7 +140,7 @@ body {
 
 .ContactInfo{
 	text-align: center;
-	width:1px;
+	width:100%;
 }
 
 .ContactInfo H4{
@@ -146,7 +152,7 @@ body {
 }
 
 .ContactInfo th, td{
-	width:500px;
+	width:400px;
 }
 
 .ContactInfo th{
