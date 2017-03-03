@@ -22,10 +22,19 @@ Bioinformatics, pp. 1974-1975, Vol. 25, no. 15, 2009
 <meta charset="UTF-8">
 <title>RNA SSAC | Search Results</title>
 
-<link rel="icon"
-	href="${pageContext.request.contextPath}${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/images/logo.png">
-
-
+	<link rel="stylesheet"
+	media="screen and (min-device-width: 1179px)"
+	href="${pageContext.request.contextPath}/resources/css/style.css"
+	type="text/css">
+<link rel="stylesheet"
+	media="screen and (min-width: 851px) and (max-width: 1178px)"
+	href="${pageContext.request.contextPath}/resources/css/styleMedium.css"
+	type="text/css">
+<link rel="stylesheet"
+	media="screen and (min-width: 0px) and (max-width: 850px)"
+	href="${pageContext.request.contextPath}/resources/css/small.css"
+	type="text/css">
+	<link rel="icon" href="${pageContext.request.contextPath}/resources/images/logo.png">
 
 <script>
 
@@ -61,7 +70,7 @@ window.onload = function(){
 </head>
 <body>
 
-	<ul class="navigation">
+	<ul id="vis" class="navigation">
 		<li class="nav-item"><a href="<c:url value="/"/>">Home</a></li>
 		<li class="nav-item"><a href="<c:url value="/contact"/>">Contact
 				Us</a></li>
@@ -74,7 +83,7 @@ window.onload = function(){
 		<li class="nav-item"><a href="<c:url value="/comparison"/>">Comparison</a></li>
 	</ul>
 
-	<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+	<input type="checkbox" id="nav-trigger" onClick="ShowBod()" class="nav-trigger" />
 	<label for="nav-trigger"></label>
 
 	<div class="site-wrap">
@@ -97,7 +106,7 @@ window.onload = function(){
 
 		</figure>	
 
-		<nav class="HamburgerStyle">
+		<nav class="HamburgerStyle" >
 
 			<a href="<c:url value="/"/>">Home</a>
 			<a href="<c:url value="/contact"/>">Contact Us</a>
@@ -109,8 +118,8 @@ window.onload = function(){
 
 
 		</nav>
-			
-		</div>
+			<br><br><br>
+		</div >
 		<script type="text/javascript">
 			function restartApplet(appletid) {
 				var applet = document.getElementById(appletid);
@@ -290,8 +299,8 @@ window.onload = function(){
 			<div>
 
 				<p>
-					<span>2016 &copy; RNA SSAC Project funded by NSF.</span><a href="#">Terms
-						of Service</a> | <a href="#">Privacy Policy</a>
+					<center><span>2016 &copy; RNA SSAC Project funded by NSF.</span><a href="#">Terms
+						of Service</a> | <a href="#">Privacy Policy</a></center>
 				</p>
 				<ul>
 					<li id="facebook"><a
@@ -301,9 +310,9 @@ window.onload = function(){
 					</li>
 				</ul>
 				<p>
-					<span>VARNA: Interactive drawing and editing of the RNA
+					<center><span>VARNA: Interactive drawing and editing of the RNA
 						secondary structure K&eacute;vin Darty, Alain Denise and Yann Ponty
-						Bioinformatics, pp. 1974-1975, Vol. 25, no. 15, 2009</span>
+						Bioinformatics, pp. 1974-1975, Vol. 25, no. 15, 2009</span></center>
 				</p>
 
 			</div>
