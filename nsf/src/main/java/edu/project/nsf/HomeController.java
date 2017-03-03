@@ -35,8 +35,8 @@ public class HomeController {
 	// final static Logger Log =
 	// LogManager.getLogger(HomeController.class.getName());
 	// RegularExp r = new RegularExp();
-	String path = "/Users/ericfry/Library/Mobile Documents/com~apple~CloudDocs/School/NSF Project/SharedFolderBackup/NSF_Data_Files/";
-	String searchedPath = "/Users/ericfry/Library/Mobile Documents/com~apple~CloudDocs/School/NSF Project/SharedFolderBackup/NSF_Searched_Files/";
+	String path = "/opt/NSF_Data_Files/";
+	String searchedPath = "/opt/NSF_Searched_Files/";
 	// String inputRNA = path + "Input RNA.txt";
 	// String dataBase= r.openFile(inputRNA);
 
@@ -491,7 +491,7 @@ public class HomeController {
 	 * BufferedOutputStream stream = new BufferedOutputStream( new
 	 * FileOutputStream(new
 <<<<<<< HEAD
-	 * File("/Users/ericfry/Library/Mobile Documents/com~apple~CloudDocs/School/NSF Project/SharedFolderBackup/NSF_Data_FilesNSF_Data_Files/"
+	 * File("/opt/NSF_Data_FilesNSF_Data_Files/"
 ||||||| merged common ancestors
 	 * File("/opt/NSF_Data_Files/"
 =======

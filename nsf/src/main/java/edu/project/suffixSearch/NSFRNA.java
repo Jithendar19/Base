@@ -12,7 +12,7 @@ public class NSFRNA {
 	public NSFRNA(RNAVariables var) {
 
 		// Set Concatenated file name and Search file name
-		var.setConcatenatedFileName("/Users/ericfry/Library/Mobile Documents/com~apple~CloudDocs/School/NSF Project/SharedFolderBackup/NSF_Data_Files/NewFormatConcatenated.txt");
+		var.setConcatenatedFileName("/opt/NSF_Data_Files/NewFormatConcatenated.txt");
 		// var.setSearchFileName(dataFilesPath + "searchASE.txt");
 
 		// Reading InputRNA

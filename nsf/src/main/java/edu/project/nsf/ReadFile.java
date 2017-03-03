@@ -12,7 +12,7 @@ public class ReadFile {
 	public String read(String name) {
 
 		// The name of the file to open.
-		String fileName = "/Users/ericfry/Library/Mobile Documents/com~apple~CloudDocs/School/NSF Project/SharedFolderBackup/NSF_Data_FilesNSF_Data_Files/" + name;
+		String fileName = "/opt/NSF_Data_FilesNSF_Data_Files/" + name;
 
 		// This will reference one line at a time
 		String line = null;
