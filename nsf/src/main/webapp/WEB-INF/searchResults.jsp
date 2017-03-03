@@ -74,13 +74,12 @@ window.onload = function(){
 		<li class="nav-item"><a href="<c:url value="/"/>">Home</a></li>
 		<li class="nav-item"><a href="<c:url value="/contact"/>">Contact
 				Us</a></li>
-		<li class="nav-item"><a href="<c:url value="/about"/>">About
-				Us</a></li>
+		<li class="nav-item"><a href="<c:url value="/about"/>">About Us</a></li>
 		<li class="nav-item"><a href="<c:url value="/team"/>">Team
 				Members</a></li>
 		<li class="nav-item"><a href="<c:url value="/search"/>">Search</a></li>
-
 		<li class="nav-item"><a href="<c:url value="/comparison"/>">Comparison</a></li>
+		<li class="nav-item"><a href="<c:url value="/publications"/>">Publications</a></li>
 	</ul>
 
 	<input type="checkbox" id="nav-trigger" onClick="ShowBod()" class="nav-trigger" />
