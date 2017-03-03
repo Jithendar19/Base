@@ -22,8 +22,7 @@ Bioinformatics, pp. 1974-1975, Vol. 25, no. 15, 2009
 <meta charset="UTF-8">
 <title>RNA SSAC | Search Results</title>
 
-	<link rel="stylesheet"
-	media="screen and (min-device-width: 1179px)"
+<link rel="stylesheet"
 	href="${pageContext.request.contextPath}/resources/css/style.css"
 	type="text/css">
 <link rel="stylesheet"
@@ -34,7 +33,8 @@ Bioinformatics, pp. 1974-1975, Vol. 25, no. 15, 2009
 	media="screen and (min-width: 0px) and (max-width: 850px)"
 	href="${pageContext.request.contextPath}/resources/css/small.css"
 	type="text/css">
-	<link rel="icon" href="${pageContext.request.contextPath}/resources/images/logo.png">
+<link rel="icon" href="${pageContext.request.contextPath}/resources/images/logo.png">
+
 
 <script>
 
@@ -74,15 +74,16 @@ window.onload = function(){
 		<li class="nav-item"><a href="<c:url value="/"/>">Home</a></li>
 		<li class="nav-item"><a href="<c:url value="/contact"/>">Contact
 				Us</a></li>
-		<li class="nav-item"><a href="<c:url value="/about"/>">About Us</a></li>
+		<li class="nav-item"><a href="<c:url value="/about"/>">About
+				Us</a></li>
 		<li class="nav-item"><a href="<c:url value="/team"/>">Team
 				Members</a></li>
 		<li class="nav-item"><a href="<c:url value="/search"/>">Search</a></li>
+
 		<li class="nav-item"><a href="<c:url value="/comparison"/>">Comparison</a></li>
-		<li class="nav-item"><a href="<c:url value="/publications"/>">Publications</a></li>
 	</ul>
 
-	<input type="checkbox" id="nav-trigger" onClick="ShowBod()" class="nav-trigger" />
+	<input type="checkbox" id="nav-trigger" onclick="ShowBod()" class="nav-trigger" />
 	<label for="nav-trigger"></label>
 
 	<div class="site-wrap">
@@ -105,11 +106,11 @@ window.onload = function(){
 
 		</figure>	
 
-		<nav class="HamburgerStyle" >
+		<nav class="HamburgerStyle">
 
 			<a href="<c:url value="/"/>">Home</a>
 			<a href="<c:url value="/contact"/>">Contact Us</a>
-			<a href="<c:url value="/about"/>">About Us</a>
+			<a href="<c:url value="/contact"/>">About Us</a>
 			<a href="<c:url value="/team"/>">Team Members</a>
 			<a href="<c:url value="/search"/>">Search</a>
 			<a href="<c:url value="/comparison"/>">Comparison</a>
@@ -117,8 +118,9 @@ window.onload = function(){
 
 
 		</nav>
-			<br><br><br>
-		</div >
+			
+		</div>
+		<h1 style="text-align: center;">Search Results</h1>
 		<script type="text/javascript">
 			function restartApplet(appletid) {
 				var applet = document.getElementById(appletid);
@@ -223,7 +225,7 @@ window.onload = function(){
 				<!-- cellspacing="1"  -->
 
 				<tr>
-					<td>Action</td>
+					<td>Redraw</td>
 					<td>Varna Depiction of Selected RNA</td>
 					<td>Select RNA</td>
 				</tr>
@@ -239,7 +241,7 @@ window.onload = function(){
 					
 				
 					<td><applet ID="VA" code="VARNA.class"
-							codebase="${pageContext.request.contextPath}${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/applet/"
+							codebase="${pageContext.request.contextPath}/resources/applet/"
 							archive="varna.jar" width="800" height="700"
 							style="text-align: right">
 							<param name="java_version" value="1.5+">
@@ -298,8 +300,12 @@ window.onload = function(){
 			<div>
 
 				<p>
-					<center><span>2016 &copy; RNA SSAC Project funded by NSF.</span><a href="#">Terms
-						of Service</a> | <a href="#">Privacy Policy</a></center>
+					<center><span>All rights reserved &copy; 2015 - <script>
+						document.write(new Date().getFullYear())
+					</script>
+						RNA SSAC Project funded by the National Science Foundation (<a
+						href="http://www.nsf.gov/">NSF</a>).
+					</span></center> <!-- <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> -->
 				</p>
 				<ul>
 					<li id="facebook"><a
@@ -310,10 +316,9 @@ window.onload = function(){
 				</ul>
 				<p>
 					<center><span>VARNA: Interactive drawing and editing of the RNA
-						secondary structure K&eacute;vin Darty, Alain Denise and Yann Ponty
+						secondary structure K&eacute;vin Darty,<br> Alain Denise and Yann Ponty
 						Bioinformatics, pp. 1974-1975, Vol. 25, no. 15, 2009</span></center>
 				</p>
-
 			</div>
 		</div>
 	</div>

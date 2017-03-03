@@ -26,7 +26,7 @@ public class Matches {
 
 		try {
 			PrintWriter writer;
-			writer = new PrintWriter("C:/Users/Capta/Desktop/dataFiles/NSF_Data_Files/matches.txt", "UTF-8");
+			writer = new PrintWriter("/Users/ericfry/NSF_Data_Files/matches.txt", "UTF-8");
 
 			RegularExp r = new RegularExp();
 

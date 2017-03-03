@@ -12,7 +12,7 @@ public class ReadFile {
 	public String read(String name) {
 
 		// The name of the file to open.
-		String fileName = "C:/Users/Capta/Desktop/dataFiles/NSF_Data_Files/" + name;
+		String fileName = "/Users/ericfry/NSF_Data_Files/" + name;
 
 		// This will reference one line at a time
 		String line = null;

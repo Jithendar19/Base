@@ -133,13 +133,13 @@ window.onload = function(){
 							<td style="text-align:left"><input type="file" name="file"></td>
 						</tr>
 						<tr>
-							<td style="text-align:right">Search Type: </td>
-							<td style="text-align:left"><input size="3" type="text" name="searchType" value=""></input></td>
-						</tr>
-						<tr>
-							<td style="text-align:right;">Search Type Info: Enter </td>
-							<td style="text-align:left">1 For Nucleotide Only<br />0 For Structure Only</td>
-						</tr>
+								<td style="text-align: right">Search Type:</td>
+								<td style="text-align: left"><select id="searchType"
+									multiple name="searchType">
+										<option value='1'>Structure-Nucleotide</option>
+										<option value='0'>Structure Only</option>
+								</select></td>
+							</tr>
 						<tr>
 							<td colspan="2" style="text-align:center"><input type="submit" value="Perform Suffix Array Search"
 								onclick="form.action='/nsf/searchResults';"></input></td>
@@ -176,7 +176,11 @@ window.onload = function(){
 					<li id="twitter"><a href="http://www.twitter.com/">twitter</a>
 					</li>
 				</ul>
-
+				<p>
+					<center><span>VARNA: Interactive drawing and editing of the RNA
+						secondary structure K&eacute;vin Darty,<br> Alain Denise and Yann Ponty
+						Bioinformatics, pp. 1974-1975, Vol. 25, no. 15, 2009</span></center>
+				</p>
 			</div>
 		</div>
 	</div>

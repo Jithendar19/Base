@@ -12,7 +12,7 @@ public class NSFRNA {
 	public NSFRNA(RNAVariables var) {
 
 		// Set Concatenated file name and Search file name
-		var.setConcatenatedFileName("C:/Users/Capta/Desktop/dataFiles/NSF_Data_Files/NewFormatConcatenated.txt");
+		var.setConcatenatedFileName("/Users/ericfry/NSF_Data_Files/NewFormatConcatenated.txt");
 		// var.setSearchFileName(dataFilesPath + "searchASE.txt");
 
 		// Reading InputRNA
@@ -45,7 +45,8 @@ public class NSFRNA {
 		SuffixIntArray createSuffixStructure = new SuffixIntArray();
 		var.setSuffixStructure(createSuffixStructure.createSuffixArray(var.getInputRNAStructure(), var.getFileNumber(), var.getSuffixStructure(), 0));
         var.setSuffixArrayIndexIteratorStructure(createSuffixStructure.getSuffixArrayIndexIterator());     
-      
+		      
+
 		// Reading Suffix Array Nucleotide
 		// System.out.println("Reading Suffix Array from file.... ");
 		// CreateSuffixFile readSuffixNucleotide = new CreateSuffixFile();

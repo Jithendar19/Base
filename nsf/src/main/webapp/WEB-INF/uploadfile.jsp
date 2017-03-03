@@ -13,10 +13,10 @@
 <meta charset="UTF-8">
 <title>NSF RNA SSAC</title>
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/css/style.css"
+	href="${pageContext.request.contextPath}/resources/css/style.css"
 	type="text/css">
 <link rel="icon"
-	href="${pageContext.request.contextPath}${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/images/logo.png">
+	href="${pageContext.request.contextPath}/resources/images/logo.png">
 </head>
 <body>
 	<div class="menu">
@@ -37,7 +37,7 @@
 	</div>
 	<div id="header">
 		<a href="<c:url value="/"/>" class="logo"><img
-			src="${pageContext.request.contextPath}${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/images/logo.png"
+			src="${pageContext.request.contextPath}/resources/images/logo.png"
 			alt=""></a>
 	</div>
 	<div id="section">
@@ -82,7 +82,7 @@
 			<div class="article">
 				<h2>Welcome to RNA SSAC Project</h2>
 				<img
-					src="${pageContext.request.contextPath}${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/images/journalsm.jpg"
+					src="${pageContext.request.contextPath}/resources/images/journalsm.jpg"
 					alt="">
 				<p>We intend to provide various services for researchers and
 					professional with a unique solution for finding patterns in a RNA.
@@ -103,7 +103,7 @@
 						<p>Submit your RNA sample to add to our database.</p>
 						<a href="blog.html" class="more">read more</a>
 					</div> <img
-					src="${pageContext.request.contextPath}${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/images/f.gif"
+					src="${pageContext.request.contextPath}/resources/images/f.gif"
 					alt="">
 				</li>
 				<li>
@@ -112,7 +112,7 @@
 						<p>Search for the RNA using substring or pattern.</p>
 						<a href="blog.html" class="more">read more</a>
 					</div> <img
-					src="${pageContext.request.contextPath}${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/images/suffixArray.png"
+					src="${pageContext.request.contextPath}/resources/images/suffixArray.png"
 					alt="">
 				</li>
 				<li>
@@ -121,7 +121,7 @@
 						<p>Annotate the RNA with possible matches.</p>
 						<a href="blog.html" class="more">read more</a>
 					</div> <img
-					src="${pageContext.request.contextPath}${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/images/ee.gif"
+					src="${pageContext.request.contextPath}/resources/images/ee.gif"
 					alt="">
 				</li>
 				<li>
@@ -130,7 +130,7 @@
 						<p>Compare your RNA sample with our existing RNA database.</p>
 						<a href="blog.html" class="more">read more</a>
 					</div> <img
-					src="${pageContext.request.contextPath}${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/images/d.gif"
+					src="${pageContext.request.contextPath}/resources/images/d.gif"
 					alt="">
 				</li>
 			</ul>

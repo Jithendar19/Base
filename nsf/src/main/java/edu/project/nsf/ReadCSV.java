@@ -13,7 +13,7 @@ public class ReadCSV {
 		
 		String[][] varna = new String[4667][3];
 
-		String csvFile = "C:/Users/Capta/Desktop/dataFiles/NSF_Data_Files/CSVDotParenthesis.csv";
+		String csvFile = "/Users/ericfry/NSF_Data_Files/CSVDotParenthesis.csv";
 		BufferedReader br = null;
 		String line = "";
 		String cvsSplitBy = ",";

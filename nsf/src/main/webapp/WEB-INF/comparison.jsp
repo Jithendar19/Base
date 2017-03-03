@@ -139,7 +139,7 @@ window.onload = function(){
 		</nav>
 		</div>
 			<h2 align="center">The Comparison Algorithm is temporarily not available at this time. <br />We are currenlty undergoing a hardware upgrade.</h2>
-
+			<h2><font size="3" color="red">${msg}</font></h2>
 		<div id="featured" align="center">
 			<div>
 				<div class="article" style="width: 99%; height: 100%; text-align: center;">

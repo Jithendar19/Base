@@ -22,7 +22,7 @@
 	href="${pageContext.request.contextPath}/resources/css/small.css"
 	type="text/css">
 <link rel="icon"
-	href="${pageContext.request.contextPath}${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/images/logo.png">
+	href="${pageContext.request.contextPath}/resources/images/logo.png">
 </head>
 
 <script>
@@ -70,7 +70,7 @@ window.onload = function(){
 		<li class="nav-item"><a href="./comparison">Comparison</a></li>
 	</ul>
 
-	<input type="checkbox" id="nav-trigger" class="nav-trigger"
+	<input type="checkbox" id="nav-trigger" onClick="ShowBod()" class="nav-trigger"
 		value="Menu" />
 	<label for="nav-trigger"></label>
 
@@ -108,7 +108,7 @@ window.onload = function(){
 
 		</div>
 		<h1 style="text-align: center;">Comparison Results</h1>
-		<div id="section">
+		
 			<script type="text/javascript">
 				/* function restartApplet(appletid) {
 					var applet = document.getElementById(appletid);
@@ -169,7 +169,7 @@ window.onload = function(){
 				var str = document.getElementbyId('option');
 				var res = str.split("#");
 			</script>
-
+			<div id="featured">
 
 			<table id="varna" style="">
 				<!-- cellspacing="1"  -->
@@ -194,7 +194,7 @@ window.onload = function(){
 					<button class="buttonSpace" onclick="redraw('VA', 'linear');">Linear</button>
 					</td>
 					<td><applet ID="VA" code="VARNA.class"
-							codebase="${pageContext.request.contextPath}${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/applet/"
+							codebase="${pageContext.request.contextPath}/resources/applet/"
 							archive="varna.jar" width="800" height="600"
 							style="text-align: right">
 							<param name="java_version" value="1.5+">
@@ -258,22 +258,24 @@ window.onload = function(){
 			<div>
 
 				<p>
-					<center><span>2016 &copy; RNA SSAC Project funded by NSF.</span><a href="#">Terms
-						of Service</a> | <a href="#">Privacy Policy</a></center>
+					<center><span>All rights reserved &copy; 2015 - <script>
+						document.write(new Date().getFullYear())
+					</script>
+						RNA SSAC Project funded by the National Science Foundation (<a
+						href="http://www.nsf.gov/">NSF</a>).
+					</span></center> <!-- <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> -->
 				</p>
 				<ul>
-					<li id="facebook"><a href="https://www.facebook.com/rnassac/">facebook</a>
+					<li id="facebook"><a
+						href="https://www.facebook.com/rnassac/">facebook</a>
 					</li>
 					<li id="twitter"><a href="http://www.twitter.com/">twitter</a>
 					</li>
-					<li id="googleplus"><a href="http://www.googleplus.com/">googleplus</a>
-					</li>
-					<li id="rss"><a href="#">rss</a></li>
 				</ul>
 				<p>
 					<center><span>VARNA: Interactive drawing and editing of the RNA
-						secondary structure K&eacute;vin Darty, Alain Denise and Yann
-						Ponty Bioinformatics, pp. 1974-1975, Vol. 25, no. 15, 2009</span></center>
+						secondary structure K&eacute;vin Darty,<br> Alain Denise and Yann Ponty
+						Bioinformatics, pp. 1974-1975, Vol. 25, no. 15, 2009</span></center>
 				</p>
 
 			</div>

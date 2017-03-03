@@ -34,10 +34,9 @@ import edu.project.suffixSearch.BinarySearch;
 public class HomeController {
 	// final static Logger Log =
 	// LogManager.getLogger(HomeController.class.getName());
-
 	// RegularExp r = new RegularExp();
-	String path = "C:/Users/Capta/Desktop/dataFiles/NSF_Data_Files/";
-	String searchedPath = "C:/Users/Capta/Desktop/dataFiles/NSF_Searched_Files/";
+	String path = "/Users/ericfry/NSF_Data_Files/";
+	String searchedPath = "/Users/ericfry/NSF_Searched_Files/";
 	// String inputRNA = path + "Input RNA.txt";
 	// String dataBase= r.openFile(inputRNA);
 
@@ -262,13 +261,7 @@ public class HomeController {
 		System.out.println("IP Address: " + request.getRemoteAddr() + " has accessed the Team Page.");
 		return "team";
 	}
-	//publications page
-	@RequestMapping(value = "/publications", method = RequestMethod.GET)
-	public String publications(Model model, HttpServletRequest request) {
-		System.out.println("IP Address: " + request.getRemoteAddr() + " has accessed the Publications Page.");
-		return "Publications";
-	}
-	
+
 	@RequestMapping(value = "/comparison", method = RequestMethod.GET)
 	public String provideComparisonInfo(Model model, HttpServletRequest request) {
 		System.out.println("IP Address: " + request.getRemoteAddr() + " has accessed the Comparison Page.");
@@ -340,67 +333,74 @@ public class HomeController {
 		ArrayList<String> fileName = new ArrayList<String>();
 		ArrayList<String> nucleotide = new ArrayList<String>();
 		ArrayList<String> indicesForPattern = new ArrayList<String>();
-
-		String output = var.getCompareOutputString().substring(0, var.getCompareOutputString().lastIndexOf("*"));
-
-		System.out.println(output);
-		//output = output.substring(0, output.lastIndexOf("*"));
-		String[] parts = output.split("#");
-
-		int noOfMatches = parts.length - 1;
-
-		System.out.println("the loop begins now: " + noOfMatches / 2);
-
-		for (int i = 0; i < noOfMatches; i++) {
-
-			if (i % 2 == 0) {
-
-				structure.add(varna[(Integer.parseInt(parts[i]))][2]);
-
-				// structure.add("..........................................................");
-				// structure.add("(((((.(((((....))))).(((((.....))))).(((((.....))))).)))))");
-				// structure.add(".......((((((((......)))).((((((((......))))))))..))))....");
-				// System.out.println(Integer.parseInt(parts[i]));
-
-				fileName.add(varna[(Integer.parseInt(parts[i]))][0]);
-
-				// fileName.add("RNA2");
-				// fileName.add("RNA3");
-				// fileName.add("RNA4");
-
-				nucleotide.add(varna[(Integer.parseInt(parts[i]))][1]);
-
+		
+		String output = var.getCompareOutputString();
+		
+		if (output.equals("-1")) {
+			System.out.println("No matches found");
+			model.addAttribute("msg", "No similarities found. Please try a different combination of files or change the Comparison Type.");
+			return "comparison";
+		} else {
+		
+			output = output.substring(0, var.getCompareOutputString().lastIndexOf("*"));
+			System.out.println(output);
+			//output = output.substring(0, output.lastIndexOf("*"));
+			String[] parts = output.split("#");
+	
+			int noOfMatches = parts.length - 1;
+	
+			System.out.println("the loop begins now: " + noOfMatches / 2);
+	
+			for (int i = 0; i < noOfMatches; i++) {
+	
+				if (i % 2 == 0) {
+	
+					structure.add(varna[(Integer.parseInt(parts[i]))][2]);
+	
+					// structure.add("..........................................................");
+					// structure.add("(((((.(((((....))))).(((((.....))))).(((((.....))))).)))))");
+					// structure.add(".......((((((((......)))).((((((((......))))))))..))))....");
+					// System.out.println(Integer.parseInt(parts[i]));
+	
+					fileName.add(varna[(Integer.parseInt(parts[i]))][0]);
+	
+					// fileName.add("RNA2");
+					// fileName.add("RNA3");
+					// fileName.add("RNA4");
+	
+					nucleotide.add(varna[(Integer.parseInt(parts[i]))][1]);
+	
+				}
+	
+				else {
+					indicesForPattern.add(Integer.parseInt(parts[i]) + "-" + parts[parts.length - 1]);
+					// System.out.println((Integer.parseInt(parts[i])));
+				}
+	
 			}
-
-			else {
-				indicesForPattern.add(Integer.parseInt(parts[i]) + "-" + parts[parts.length - 1]);
-				// System.out.println((Integer.parseInt(parts[i])));
-			}
-
+			System.out.println(indicesForPattern);
+			System.out.println("loop terminated  adding model attributes .....");
+	
+			// model.addAttribute("msgs", "Finding matches took: " + elapsedTime + "
+			// nanoseconds");
+			// model.addAttribute("noOfMatches", parts.length);
+			// model.addAttribute("RegularExpPojo", new RegularExpPojo());
+	
+			// System.out.println("Finding matches took: " + elapsedTime + "
+			// nanoseconds");
+	
+			structureList.add(0, structure);
+			structureList.add(1, fileName);
+			structureList.add(2, indicesForPattern);
+			model.addAttribute("nucleotide", nucleotide);
+			model.addAttribute("defaultResult", structureList);
+			//model.addAttribute("HighLight", indicesForPattern);
+			model.addAttribute("patternLength", parts[parts.length - 1]);
+			// model.addAttribute("elapsedTime", elapsedTime);
+	
+			return "comparisonResults";
 		}
-		System.out.println(indicesForPattern);
-		System.out.println("loop terminated  adding model attributes .....");
-
-		// model.addAttribute("msgs", "Finding matches took: " + elapsedTime + "
-		// nanoseconds");
-		// model.addAttribute("noOfMatches", parts.length);
-		// model.addAttribute("RegularExpPojo", new RegularExpPojo());
-
-		// System.out.println("Finding matches took: " + elapsedTime + "
-		// nanoseconds");
-
-		structureList.add(0, structure);
-		structureList.add(1, fileName);
-		structureList.add(2, indicesForPattern);
-		model.addAttribute("nucleotide", nucleotide);
-		model.addAttribute("defaultResult", structureList);
-		//model.addAttribute("HighLight", indicesForPattern);
-		model.addAttribute("patternLength", parts[parts.length - 1]);
-		// model.addAttribute("elapsedTime", elapsedTime);
-
-		return "comparisonResults";
 	}
-
 	/*
 	 * @RequestMapping(value = "/uploaded", method = RequestMethod.POST) public
 	 * String handleFileUpload(@ModelAttribute RegularExpPojo pojo, Model
@@ -490,7 +490,7 @@ public class HomeController {
 	 * if (!file.isEmpty()) { try { byte[] bytes = file.getBytes();
 	 * BufferedOutputStream stream = new BufferedOutputStream( new
 	 * FileOutputStream(new
-	 * File("C:/Users/Capta/Desktop/dataFiles/NSF_Data_Files/"
+	 * File("/Users/ericfry/NSF_Data_FilesNSF_Data_Files/"
 	 * + name))); stream.write(bytes); stream.close();
 	 * 
 	 * model.addAttribute("msg", "The submission has been added as " + name);
