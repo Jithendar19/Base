@@ -8,18 +8,13 @@
 
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=.4, minimum-scale=.4, maximum-scale=.5, user-scalable=yes"/> <!--320-->
 <title>RNA SSAC | Search</title>
+<meta name="viewport" content="width=device-width, initial-scale=.4, minimum-scale=.4, maximum-scale=.5, user-scalable=yes"/> <!--320-->
+<meta charset="UTF-8">
 <link rel="stylesheet"
+	media="screen and (min-device-width: 1179px)"
 	href="${pageContext.request.contextPath}/resources/css/style.css"
 	type="text/css">
-<<<<<<< HEAD
-<link rel="icon"
-	href="${pageContext.request.contextPath}/resources/images/logo.png">
-||||||| merged common ancestors
-	<link rel="icon" href="${pageContext.request.contextPath}/resources/images/logo.png">
-=======
 <link rel="stylesheet"
 	media="screen and (min-width: 851px) and (max-width: 1178px)"
 	href="${pageContext.request.contextPath}/resources/css/styleMedium.css"
@@ -28,9 +23,8 @@
 	media="screen and (min-width: 0px) and (max-width: 850px)"
 	href="${pageContext.request.contextPath}/resources/css/small.css"
 	type="text/css">
-<link rel="icon" href="${pageContext.request.contextPath}/resources/images/logo.png">
-
-
+<link rel="icon"
+	href="${pageContext.request.contextPath}/resources/images/logo.png">
 <script>
 
 function ShowBod()
@@ -62,7 +56,6 @@ window.onload = function(){
 }
 
 </script>
->>>>>>> Update_Website
 </head>
 <body>
 	<ul id="vis" class="navigation">
@@ -141,7 +134,6 @@ window.onload = function(){
 							value="${now}" var="newDate" />
 					</p>
 
-<<<<<<< HEAD
 					<form method="POST" enctype="multipart/form-data">
 						<table>
 							<tr>
@@ -160,47 +152,8 @@ window.onload = function(){
 								<td colspan="2" style="text-align: center"><input
 									type="submit" value="Perform Suffix Array Search"
 									onclick="form.action='/nsf/searchResults';"></input></td>
-								<!-- <td style="text-align:left"><input type="submit" value="Regular Expression Search"
-||||||| merged common ancestors
-				<form method="POST" enctype="multipart/form-data">
-					<table>
-						<tr>
-							<td style="text-align:right">File to Upload: </td>
-							<td style="text-align:left"><input type="file" name="file"></td>
-						</tr>
-						<tr>
-							<td style="text-align:right">Search Type: </td>
-							<td style="text-align:left"><input size="3" type="text" name="searchType" value=""></input></td>
-						</tr>
-						<tr>
-							<td style="text-align:right;">Search Type Info: Enter </td>
-							<td style="text-align:left">1 For Nucleotide Only<br />0 For Structure Only</td>
-						</tr>
-						<tr>
-							<td colspan="2" style="text-align:center"><input type="submit" value="Perform Suffix Array Search"
-								onclick="form.action='/nsf/searchResults';"></input></td>
-							<!-- <td style="text-align:left"><input type="submit" value="Regular Expression Search"
-=======
-				<form method="POST" enctype="multipart/form-data">
-					<table>
-						<tr>
-							<td style="text-align:right">File to Upload: </td>
-							<td style="text-align:left"><input type="file" name="file"></td>
-						</tr>
-						<tr>
-								<td style="text-align: right">Search Type:</td>
-								<td style="text-align: left"><select id="searchType"
-									multiple name="searchType">
-										<option value='1'>Structure-Nucleotide</option>
-										<option value='0'>Structure Only</option>
-								</select></td>
-							</tr>
-						<tr>
-							<td colspan="2" style="text-align:center"><input type="submit" value="Perform Suffix Array Search"
-								onclick="form.action='/nsf/searchResults';"></input></td>
-							<!-- <td style="text-align:left"><input type="submit" value="Regular Expression Search"
->>>>>>> Update_Website
-								onclick="form.action='/nsf/uploaded';"></input></td> -->
+								<!-- <td style="text-align:left"><input type="submit" value="Regular Expression Search"-->
+
 							</tr>
 							<tr>
 								<td style="text-align: center"><input type="hidden"
@@ -214,30 +167,16 @@ window.onload = function(){
 			</div>
 
 		</div>
-<<<<<<< HEAD
-
+	</div>
 		<div id="footer">
-||||||| merged common ancestors
-		 
- 		<div id="footer">
-=======
-		 </div>
- 		<div id="footer">
->>>>>>> Update_Website
+
 			<div>
 				<p>
 					<center><span>All rights reserved &copy; 2015 - <script>
 						document.write(new Date().getFullYear())
 					</script> RNA SSAC Project funded by the National Science Foundation (<a
 						href="http://www.nsf.gov/">NSF</a>).
-<<<<<<< HEAD
-					</span>
-					<!-- <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> -->
-||||||| merged common ancestors
-					</span><!-- <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> -->
-=======
 					</span></center> <!-- <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> -->
->>>>>>> Update_Website
 				</p>
 				<ul>
 					<li id="facebook"><a href="https://www.facebook.com/rnassac/">facebook</a>
@@ -247,7 +186,7 @@ window.onload = function(){
 				</ul>
 				<p>
 					<center><span>VARNA: Interactive drawing and editing of the RNA
-						secondary structure K&eacute;vin Darty,<br> Alain Denise and Yann Ponty
+						secondary structure K&eacute;vin Darty,<br /> Alain Denise and Yann Ponty
 						Bioinformatics, pp. 1974-1975, Vol. 25, no. 15, 2009</span></center>
 				</p>
 			</div>
