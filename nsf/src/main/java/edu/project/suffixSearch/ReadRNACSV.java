@@ -21,7 +21,7 @@ public class ReadRNACSV {
     
     public String [] ReadRNANames(String[] RNANames) {
 
-	String csvFile = "/Users/ericfry/NSF_Data_Files/CSVDotParenthesis.csv";
+	String csvFile = "/opt/NSF_Data_Files/CSVDotParenthesis.csv";
 	BufferedReader br = null;
 	String line = "";
 	String cvsSplitBy = ",";

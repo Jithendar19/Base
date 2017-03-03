@@ -35,8 +35,8 @@ public class HomeController {
 	// final static Logger Log =
 	// LogManager.getLogger(HomeController.class.getName());
 	// RegularExp r = new RegularExp();
-	String path = "/Users/ericfry/NSF_Data_Files/";
-	String searchedPath = "/Users/ericfry/NSF_Searched_Files/";
+	String path = "/opt/NSF_Data_Files/";
+	String searchedPath = "/opt/NSF_Searched_Files/";
 	// String inputRNA = path + "Input RNA.txt";
 	// String dataBase= r.openFile(inputRNA);
 
@@ -490,7 +490,7 @@ public class HomeController {
 	 * if (!file.isEmpty()) { try { byte[] bytes = file.getBytes();
 	 * BufferedOutputStream stream = new BufferedOutputStream( new
 	 * FileOutputStream(new
-	 * File("/Users/ericfry/NSF_Data_FilesNSF_Data_Files/"
+	 * File("/opt/NSF_Data_FilesNSF_Data_Files/"
 	 * + name))); stream.write(bytes); stream.close();
 	 * 
 	 * model.addAttribute("msg", "The submission has been added as " + name);

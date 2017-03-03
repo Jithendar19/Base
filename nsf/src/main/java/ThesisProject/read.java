@@ -23,7 +23,7 @@ public class read {
 		 	  //String st=new String("(~"");
 		 	  
 		 	  
-				inputStream = new FileInputStream("/Users/ericfry/NSF_Data_Files/NewPatternsFile.txt");
+				inputStream = new FileInputStream("/opt/NSF_Data_Files/NewPatternsFile.txt");
 	            sc = new Scanner(inputStream, "UTF-8");
 	            for(int j=0;j<100;j++)
 	            {	
