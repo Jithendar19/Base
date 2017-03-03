@@ -109,7 +109,7 @@ window.onload = function(){
 
 			<a href="<c:url value="/"/>">Home</a>
 			<a href="<c:url value="/contact"/>">Contact Us</a>
-			<a href="<c:url value="/contact"/>">About Us</a>
+			<a href="<c:url value="/about"/>">About Us</a>
 			<a href="<c:url value="/team"/>">Team Members</a>
 			<a href="<c:url value="/search"/>">Search</a>
 			<a href="<c:url value="/comparison"/>">Comparison</a>
