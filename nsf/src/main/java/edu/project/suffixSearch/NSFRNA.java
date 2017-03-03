@@ -45,7 +45,8 @@ public class NSFRNA {
 		SuffixIntArray createSuffixStructure = new SuffixIntArray();
 		var.setSuffixStructure(createSuffixStructure.createSuffixArray(var.getInputRNAStructure(), var.getFileNumber(), var.getSuffixStructure(), 0));
         var.setSuffixArrayIndexIteratorStructure(createSuffixStructure.getSuffixArrayIndexIterator());     
-      
+		      
+
 		// Reading Suffix Array Nucleotide
 		// System.out.println("Reading Suffix Array from file.... ");
 		// CreateSuffixFile readSuffixNucleotide = new CreateSuffixFile();

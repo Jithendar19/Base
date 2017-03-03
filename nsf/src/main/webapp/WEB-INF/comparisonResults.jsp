@@ -6,16 +6,56 @@
    "http://java.sun.com/dtd/web-app_2_3.dtd" >
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=.4, minimum-scale=.4, maximum-scale=.5, user-scalable=yes"/> <!--320-->
 <meta charset="UTF-8">
 <title>RNA SSAC | Comparison Results</title>
+
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/resources/css/style.css"
+	type="text/css">
+<link rel="stylesheet"
+	media="screen and (min-width: 851px) and (max-width: 1178px)"
+	href="${pageContext.request.contextPath}/resources/css/styleMedium.css"
+	type="text/css">
+<link rel="stylesheet"
+	media="screen and (min-width: 0px) and (max-width: 850px)"
+	href="${pageContext.request.contextPath}/resources/css/small.css"
 	type="text/css">
 <link rel="icon"
 	href="${pageContext.request.contextPath}/resources/images/logo.png">
 </head>
 
+<script>
 
+function ShowBod()
+{
+	var element = document.getElementById("vis");
+	var bod = document.body.style;
+	var check = document.getElementById("nav-trigger");
+	
+	if(check.checked)
+	{
+	bod.backgroundImage = "url(../resources/images/bg.png)";
+	element.style.display = "block";
+	}
+	else
+	{
+		bod.background = "none";
+		element.style.display = "none";
+	}
+}
+
+window.onload = function(){
+	var check = document.getElementById("nav-trigger");
+	var element = document.getElementById("vis");
+	var bod = document.body.style;
+	check.checked = false;
+	bod.background = "none";
+	element.style.display = "none";
+	
+}
+
+</script>
 
 <body>
 
@@ -30,23 +70,45 @@
 		<li class="nav-item"><a href="./comparison">Comparison</a></li>
 	</ul>
 
-	<input type="checkbox" id="nav-trigger" class="nav-trigger"
+	<input type="checkbox" id="nav-trigger" onClick="ShowBod()" class="nav-trigger"
 		value="Menu" />
 	<label for="nav-trigger"></label>
 
 	<div class="site-wrap">
 		<!-- insert the rest of your page markup here -->
 
-
+		<div class="focus">
 		<div id="header">
-			<a href="./"><img class="logo"
-				src="${pageContext.request.contextPath}/resources/images/logo.png"
-				alt=""></a>
+			<figure class="headImages">
+				<a href="http://www.tamuc.edu"><img class="tamucLogo" style="max-width: 600px"
+					src="${pageContext.request.contextPath}/resources/images/LionLogo.png"
+					alt="" ></a>
 
+
+				<a href="<c:url value="/"/>"><img class="logo" 
+				src="${pageContext.request.contextPath}/resources/images/logo.png"
+				alt="" ></a>
+		
+				<a href="http://tamuc.edu"><img class="tamlion" src="${pageContext.request.contextPath}/resources/images/ImageRight.jpg" ></a>
+
+
+		</figure>	
+
+		<nav class="HamburgerStyle">
+
+			<a href="<c:url value="/"/>">Home</a>
+			<a href="<c:url value="/contact"/>">Contact Us</a>
+			<a href="<c:url value="/about"/>">About Us</a>
+			<a href="<c:url value="/team"/>">Team Members</a>
+			<a href="<c:url value="/search"/>">Search</a>
+			<a href="<c:url value="/comparison"/>">Comparison</a>
+			<a href="<c:url value="/publications"/>">Publications</a>
+
+		</nav>
 
 		</div>
 		<h1 style="text-align: center;">Comparison Results</h1>
-		<div id="section">
+		
 			<script type="text/javascript">
 				/* function restartApplet(appletid) {
 					var applet = document.getElementById(appletid);
@@ -107,7 +169,7 @@
 				var str = document.getElementbyId('option');
 				var res = str.split("#");
 			</script>
-
+			<div id="featured">
 
 			<table id="varna" style="">
 				<!-- cellspacing="1"  -->
@@ -192,26 +254,29 @@
 			<!-- </FIELDSET> -->
 
 		</div>
+		</div>
 		<div id="footer">
 			<div>
 
 				<p>
-					<span>2016 &copy; RNA SSAC Project funded by NSF.</span><a href="#">Terms
-						of Service</a> | <a href="#">Privacy Policy</a>
+					<center><span>All rights reserved &copy; 2015 - <script>
+						document.write(new Date().getFullYear())
+					</script>
+						RNA SSAC Project funded by the National Science Foundation (<a
+						href="http://www.nsf.gov/">NSF</a>).
+					</span></center> <!-- <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> -->
 				</p>
 				<ul>
-					<li id="facebook"><a href="https://www.facebook.com/rnassac/">facebook</a>
+					<li id="facebook"><a
+						href="https://www.facebook.com/rnassac/">facebook</a>
 					</li>
 					<li id="twitter"><a href="http://www.twitter.com/">twitter</a>
 					</li>
-					<li id="googleplus"><a href="http://www.googleplus.com/">googleplus</a>
-					</li>
-					<li id="rss"><a href="#">rss</a></li>
 				</ul>
 				<p>
-					<span>VARNA: Interactive drawing and editing of the RNA
-						secondary structure K&eacute;vin Darty, Alain Denise and Yann
-						Ponty Bioinformatics, pp. 1974-1975, Vol. 25, no. 15, 2009</span>
+					<center><span>VARNA: Interactive drawing and editing of the RNA
+						secondary structure K&eacute;vin Darty,<br> Alain Denise and Yann Ponty
+						Bioinformatics, pp. 1974-1975, Vol. 25, no. 15, 2009</span></center>
 				</p>
 
 			</div>
