@@ -561,6 +561,8 @@ figure{
 	width: 670;
 	height: auto;
 	position: relative;
+	//text-align:center;
+	
 }
 
 #body .content>img {
@@ -576,7 +578,23 @@ figure{
 	padding: 20px 0;
 	text-transform: capitalize;
 }
-
+.construc h2{
+	color: black;
+	font-size: 24px;
+	font-weight: normal;
+	margin: 0;
+	padding: 20px 0;
+	text-transform: capitalize;
+}
+.construc p
+{
+	font-weight:bold;
+}
+.construc{
+	text-align:center;
+	margin-bottom:400px;
+	margin-top:200px;
+}
 #body .content h3 {
 	color: black;
 	font-size: 14px;

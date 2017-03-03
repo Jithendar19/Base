@@ -104,15 +104,17 @@ window.onload = function(){
 
 		</nav>
 		</div>
-		<div id="body">
-			<div class="content">
+		<div id="body">  <!-- class="content"-->
+			<div class="construc">
 				<!-- <img src="${pageContext.request.contextPath}/resources/images/telephone.jpg" alt=""> -->
 				<h2>send us a message</h2>
-				<form action="#">
-					<label for="firstName"> <span>first name*</span> <input
-						type="text" name="first" id="firstName"></label> <label
-						for="lastName"> <span>last name*</span> <input type="text"
-						name="last" id="lastName"></label> <label for="email"> <span>email*</span>
+				<!-- <form action="${pageContext.request.contextPath}/WEB-INF/mail.php" method="post">
+					<label for="firstName"> 
+					<span>first name*</span> 
+					<input type="text" name="first" id="firstName"></label>
+					
+					 <label	for="lastName"> <span>last name*</span> <input type="text" 
+					 name="last" id="lastName"></label> <label for="email"> <span>email*</span>
 						<input type="text" name="email" id="email"></label> <label
 						for="phoneNumber"> <span>Phone Number</span> <input
 						type="text" name="phone" id="phoneNumber"></label> <label
@@ -121,7 +123,8 @@ window.onload = function(){
 						<span>message</span> <textarea name="" id="message" cols="30"
 							rows="10"></textarea>
 					</label> <input type="submit" value="" id="submit">
-				</form>
+				</form>-->
+				<p>This page is under construction. For more information E-mail us at <a href="mailto:rnassac@gmail.com">rnassac@gmail.com</a>.</p>
 			</div>
 		</div>
 		</div>

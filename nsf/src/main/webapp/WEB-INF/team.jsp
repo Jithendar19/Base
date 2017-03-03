@@ -134,16 +134,17 @@ window.onload = function(){
 						</th>
 
 						<th>
-							<section>
-								<H4>Student Researcher - Undergraduate Student</H4>
-								<figure><img src="${pageContext.request.contextPath}/resources/images/rabin.jpg" alt="Rabin's pic" width="170" height="196"></figure>
+						<section>
+								<H4>Student Researcher - <br>Graduate Student</H4>
+								<figure><img src="${pageContext.request.contextPath}/resources/images/jitu.jpg" alt="Jithendar's pic" width="170" height="196"></figure>
 								<p>
-									Rabindra Raj Pandey
-									<br />TAMUC: Computer Science
-									<br />E-mail: <a href="mailto:rrj.pandey@gmail.com">rrj.pandey@gmail.com</a>
-									<br />Hours: Mondays to Fridays 7:00am - 6:00pm
+									Jithendar Anandan
+									<br />TAMUC, Computer Science
+									<br />E-mail: <a href="mailto:janandan@leomail.tamuc.edu">janandan@leomail.tamuc.edu</a>
+									<br />Hours: Monday-Fridays 7:00am - 6:00pm
 								</p>
 							</section>
+							
 						</th>
 
 						<th>
@@ -160,18 +161,6 @@ window.onload = function(){
 						</th>
 					</tr>
 					<tr>
-						<td>
-							<section>
-								<H4>Student Researcher - <br>Graduate Student</H4>
-								<figure><img src="${pageContext.request.contextPath}/resources/images/jitu.jpg" alt="Jithendar's pic" width="170" height="196"></figure>
-								<p>
-									Jithendar Anandan
-									<br />TAMUC, Computer Science
-									<br />E-mail: <a href="mailto:janandan@leomail.tamuc.edu">janandan@leomail.tamuc.edu</a>
-									<br />Hours: Monday-Fridays 7:00am - 6:00pm
-								</p>
-							</section>
-						</td>
 						<td>
 							<section>
 								<H4>Student Researcher - Undergraduate Student</H4>
@@ -196,6 +185,18 @@ window.onload = function(){
 								</p>
 							</section>
 						</td>
+						<td>
+							<section>
+								<H4>Student Researcher - <br>Graduate Student</H4>
+								<figure><img src="${pageContext.request.contextPath}/resources/images/Nitin.jpg" alt="Nitin's Pic" width="170" height="196"></figure>
+								<p>
+									Nitin Ganneboina
+									<br />TAMUC: Computer Science
+									<br /><a href="nganneboina@leomail.tamuc.edu">nganneboina@leomail.tamuc.edu</a>
+									<br />Hours: Monday-Fridays 9:00am - 5:00pm
+								</p>
+							</section>
+						</td>
 						</tr>
 						<tr>
 						<td>
@@ -212,16 +213,18 @@ window.onload = function(){
 						</td>
 						
 						<td>
-							<section>
-								<H4>Student Researcher - <br>Graduate Student</H4>
-								<figure><img src="${pageContext.request.contextPath}/resources/images/Nitin.jpg" alt="Nitin's Pic" width="170" height="196"></figure>
+						
+						<section>
+								<H4>Student Researcher - Undergraduate Student</H4>
+								<figure><img src="${pageContext.request.contextPath}/resources/images/rabin.jpg" alt="Rabin's pic" width="170" height="196"></figure>
 								<p>
-									Nitin Ganneboina
+									Rabindra Raj Pandey
 									<br />TAMUC: Computer Science
-									<br /><a href="nganneboina@leomail.tamuc.edu">nganneboina@leomail.tamuc.edu</a>
-									<br />Hours: Monday-Fridays 9:00am - 5:00pm
+									<br />E-mail: <a href="mailto:rrj.pandey@gmail.com">rrj.pandey@gmail.com</a>
+									<br />Hours: Mondays to Fridays 7:00am - 6:00pm
 								</p>
 							</section>
+							
 						</td>
 					</tr>
 				</table>
