@@ -74,7 +74,7 @@ window.onload = function(){
 				Members</a></li>
 		<li class="nav-item"><a href="<c:url value="/search"/>">Search</a></li>
 		<li class="nav-item"><a href="<c:url value="/comparison"/>">Comparison</a></li>
-		<li class="nav-item"><a href="<c:url value="/publications"/>">Publications</a></li>
+		<li class="nav-item"><a href="<c:url value="/Publications"/>">Publications</a></li>
 	</ul>
 
 	<input type="checkbox" onclick="ShowBod()" id="nav-trigger" class="nav-trigger" />
@@ -107,7 +107,7 @@ window.onload = function(){
 			<a href="<c:url value="/team"/>">Team Members</a>
 			<a href="<c:url value="/search"/>">Search</a>
 			<a href="<c:url value="/comparison"/>">Comparison</a>
-			<a href="<c:url value="/publications"/>">Publications</a>
+			<a href="<c:url value="/Publications"/>">Publications</a>
 
 		</nav>
 
@@ -141,7 +141,7 @@ window.onload = function(){
 							value="${now}" var="newDate" />
 					</p>
 
-<<<<<<< HEAD
+
 					<form method="POST" enctype="multipart/form-data">
 						<table>
 							<tr>
@@ -161,7 +161,7 @@ window.onload = function(){
 									type="submit" value="Perform Suffix Array Search"
 									onclick="form.action='/nsf/searchResults';"></input></td>
 								<!-- <td style="text-align:left"><input type="submit" value="Regular Expression Search"
-||||||| merged common ancestors
+
 				<form method="POST" enctype="multipart/form-data">
 					<table>
 						<tr>
@@ -180,7 +180,7 @@ window.onload = function(){
 							<td colspan="2" style="text-align:center"><input type="submit" value="Perform Suffix Array Search"
 								onclick="form.action='/nsf/searchResults';"></input></td>
 							<!-- <td style="text-align:left"><input type="submit" value="Regular Expression Search"
-=======
+
 				<form method="POST" enctype="multipart/form-data">
 					<table>
 						<tr>
@@ -199,7 +199,7 @@ window.onload = function(){
 							<td colspan="2" style="text-align:center"><input type="submit" value="Perform Suffix Array Search"
 								onclick="form.action='/nsf/searchResults';"></input></td>
 							<!-- <td style="text-align:left"><input type="submit" value="Regular Expression Search"
->>>>>>> Update_Website
+
 								onclick="form.action='/nsf/uploaded';"></input></td> -->
 							</tr>
 							<tr>
@@ -214,30 +214,22 @@ window.onload = function(){
 			</div>
 
 		</div>
-<<<<<<< HEAD
 
-		<div id="footer">
-||||||| merged common ancestors
-		 
- 		<div id="footer">
-=======
 		 </div>
  		<div id="footer">
->>>>>>> Update_Website
+
 			<div>
 				<p>
 					<center><span>All rights reserved &copy; 2015 - <script>
 						document.write(new Date().getFullYear())
 					</script> RNA SSAC Project funded by the National Science Foundation (<a
 						href="http://www.nsf.gov/">NSF</a>).
-<<<<<<< HEAD
+
 					</span>
 					<!-- <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> -->
-||||||| merged common ancestors
-					</span><!-- <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> -->
-=======
+
 					</span></center> <!-- <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> -->
->>>>>>> Update_Website
+
 				</p>
 				<ul>
 					<li id="facebook"><a href="https://www.facebook.com/rnassac/">facebook</a>

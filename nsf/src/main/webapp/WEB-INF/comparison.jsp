@@ -101,7 +101,7 @@ window.onload = function(){
 				Members</a></li>
 		<li class="nav-item"><a href="<c:url value="/search"/>">Search</a></li>
 		<li class="nav-item"><a href="<c:url value="/comparison"/>">Comparison</a></li>
-		<li class="nav-item"><a href="<c:url value="/publications"/>">Publications</a></li>
+		<li class="nav-item"><a href="<c:url value="/Publications"/>">Publications</a></li>
 	</ul>
 
 	<input type="checkbox" id="nav-trigger" onclick="ShowBod()" class="nav-trigger" />
@@ -119,8 +119,24 @@ window.onload = function(){
 
 				<a href="<c:url value="/"/>"><img class="logo" 
 				src="${pageContext.request.contextPath}/resources/images/logo.png"
-<<<<<<< HEAD
-				alt=""></a>
+				alt="" ></a>
+		
+				<a href="http://tamuc.edu"><img class="tamlion" src="${pageContext.request.contextPath}/resources/images/ImageRight.jpg" ></a>
+
+
+		</figure>	
+
+		<nav class="HamburgerStyle">
+
+			<a href="<c:url value="/"/>">Home</a>
+			<a href="<c:url value="/contact"/>">Contact Us</a>
+			<a href="<c:url value="/about"/>">About Us</a>
+			<a href="<c:url value="/team"/>">Team Members</a>
+			<a href="<c:url value="/search"/>">Search</a>
+			<a href="<c:url value="/comparison"/>">Comparison</a>
+			<a href="<c:url value="/Publications"/>">Publications</a>
+
+		</nav>
 		</div>
 		<h2>Suffix Search</h2>
 		<p>
@@ -146,7 +162,7 @@ window.onload = function(){
 			Explorer, or Safari. Chrome cannot be used as it does not allow the
 			use of Java Applets, and therefore will not allow us to display the
 			RNA sequence for you.</p>
-		<h2>
+		
 			<h2>
 				<font size="3" color="red">${msg}</font>
 			</h2>
@@ -198,187 +214,22 @@ window.onload = function(){
 							</table>
 						</form>
 					</div>
-||||||| merged common ancestors
-				alt=""></a>
+</div>
+</div>
+</div>
+				<!-- alt=""></a>
 		</div>
 			<h2 align="center">The Comparison Algorithm is temporarily not available at this time. <br />We are currently undergoing a hardware upgrade.</h2>
-
-		<div id="featured" align="center">
-			<div>
-				<div class="article" style="width: 99%; height: 100%; text-align: center;">
-				 <form method="POST" enctype="multipart/form-data">
-					<table>
-						<tr>
-							<th>Select RNA <br />to Compare:
-							</th>
-							<th></th>
-							<th>Selected RNA</th>
-						</tr>
-						<tr>
-							<td style="height: 300;"><select id="select"
-								multiple name="select" style="height: 300px;">
-									<option disabled value=''>Please make a selection</option>
-									<c:forEach items="${fileNames}" begin="1" end="4666" varStatus="row">
-										<option id="option" value="${fileNames[row.index][0]}">${fileNames[row.index][0]}</option>
-									</c:forEach>
-							</select></td>
-							<td style="height: 300px; margin: auto; display: block;">
-								<input type="button" id="left" value="&lt;" /> 
-								<input type="button" id="right" value="&gt;" /><br /> 
-								<input type="button" id="leftall" value="&lt;&lt;" /> 
-								<input type="button" id="rightall" value="&gt;&gt;" /></td>
-							<td style="height: 300;"><select id="results"
-								multiple="multiple" name="results" style="height: 300;">
-								<option disabled value=''>Please make a selection</option>
-							</select></td>
-						</tr>
-						<tr colspan="3">
-							<td style="text-align:right">Search Type: </td>
-							<td style="text-align:left"><select id="searchType"
-								multiple name="searchType" >
-									<option value='1'>Structure-Nucleotide</option>
-									<option value='0'>Structure Only</option></select></td>
-						</tr>
-						<tr>
-							<td colspan="3" rowspan="2"><input
-								type="submit" value="Compare Selected RNA"
-								onclick="form.action='/nsf/comparisonResults';" align="middle"></input></td>
-						</tr>
-					</table>
-				</form> 
-=======
-				alt="" ></a>
-		
-				<a href="http://tamuc.edu"><img class="tamlion" src="${pageContext.request.contextPath}/resources/images/ImageRight.jpg" ></a>
-
-
-		</figure>	
-
-		<nav class="HamburgerStyle">
-
-			<a href="<c:url value="/"/>">Home</a>
-			<a href="<c:url value="/contact"/>">Contact Us</a>
-			<a href="<c:url value="/about"/>">About Us</a>
-			<a href="<c:url value="/team"/>">Team Members</a>
-			<a href="<c:url value="/search"/>">Search</a>
-			<a href="<c:url value="/comparison"/>">Comparison</a>
-			<a href="<c:url value="/publications"/>">Publications</a>
-
-		</nav>
-		</div>
-			<h2 align="center">The Comparison Algorithm is temporarily not available at this time. <br />We are currenlty undergoing a hardware upgrade.</h2>
-			<h2><font size="3" color="red">${msg}</font></h2>
-		<div id="featured" align="center">
-			<div>
-				<div class="article" style="width: 99%; height: 100%; text-align: center;">
-				 <form method="POST" enctype="multipart/form-data">
-					<table>
-						<tr>
-							<th>Select RNA <br />to Compare:
-							</th>
-							<th></th>
-							<th>Selected RNA</th>
-						</tr>
-						<tr>
-							<td style="height: 300;"><select id="select"
-								multiple name="select" style="height: 300px;">
-									<option selected disabled value=''>Please make a selection</option>
-									<c:forEach items="${fileNames}" begin="1" end="4666" varStatus="row">
-										<option id="option" value="${fileNames[row.index][0]}">${fileNames[row.index][0]}</option>
-									</c:forEach>
-							</select></td>
-							<td style="height: 300px; margin: auto; display: block;">
-								<input type="button" id="left" value="&lt;" /> 
-								<input type="button" id="right" value="&gt;" /><br /> 
-								<input type="button" id="leftall" value="&lt;&lt;" /> 
-								<input type="button" id="rightall" value="&gt;&gt;" /></td>
-							<td style="height: 300;"><select id="results"
-								multiple="multiple" name="results" style="height: 300;">
-								<option selected disabled value=''>Please make a selection</option>
-							</select></td>
-						</tr>
-						<tr colspan="3">
-								<td style="text-align: right">Search Type:</td>
-								<td style="text-align: left"><select id="searchType"
-									multiple name="searchType">
-										<option value='1'>Structure-Nucleotide</option>
-										<option value='0'>Structure Only</option>
-								</select></td>
-							</tr>
-						<tr>
-							<td colspan="3" rowspan="2"><input
-								type="submit" value="Compare Selected RNA"
-								onclick="form.action='/nsf/comparisonResults';" align="middle"></input></td>
-								
-						</tr>
-						
-					</table>
-				</form> 
->>>>>>> Update_Website
-				</div>
-
-<<<<<<< HEAD
-			</div>
-
-			<div id="footer">
-				<div>
-					<p>
-						<span>All rights reserved &copy; 2015 - <script>
-							document.write(new Date().getFullYear())
-						</script> RNA SSAC Project funded by the National Science Foundation (<a
-							href="http://www.nsf.gov/">NSF</a>).
-						</span>
-						<!-- <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> -->
-					</p>
-					<ul>
-						<li id="facebook"><a href="https://www.facebook.com/rnassac/">facebook</a>
-						</li>
-						<li id="twitter"><a href="http://www.twitter.com/">twitter</a>
-						</li>
-					</ul>
-					<p>
-						<span>VARNA: Interactive drawing and editing of the RNA
-							secondary structure K&eacute;vin Darty, Alain Denise and Yann
-							Ponty Bioinformatics, pp. 1974-1975, Vol. 25, no. 15, 2009</span>
-					</p>
-				</div>
-||||||| merged common ancestors
-		</div>
-
+-->
 		<div id="footer">
 			<div>
 				<p>
-					<span>All rights reserved &copy; 2015 - <script>
+					<span><center>All rights reserved &copy; 2015 - <script>
 						document.write(new Date().getFullYear())
 					</script>
 						RNA SSAC Project funded by the National Science Foundation (<a
 						href="http://www.nsf.gov/">NSF</a>).
-					</span><!-- <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> -->
-				</p>
-				<ul>
-					<li id="facebook"><a
-						href="https://www.facebook.com/rnassac/">facebook</a>
-					</li>
-					<li id="twitter"><a href="http://www.twitter.com/">twitter</a>
-					</li>
-				</ul>
-				<p>
-					<span>VARNA: Interactive drawing and editing of the RNA
-						secondary structure K&eacute;vin Darty, Alain Denise and Yann Ponty
-						Bioinformatics, pp. 1974-1975, Vol. 25, no. 15, 2009</span>
-				</p>
-=======
-		</div>
-		</div>
-		<div id="footer">
-			<div>
-				<p>
-					<center><span>All rights reserved &copy; 2015 - <script>
-						document.write(new Date().getFullYear())
-					</script>
-						RNA SSAC Project funded by the National Science Foundation (<a
-						href="http://www.nsf.gov/">NSF</a>).
-					</span></center> <!-- <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> -->
+					</span></center><!-- <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> -->
 				</p>
 				<ul>
 					<li id="facebook"><a
@@ -389,12 +240,13 @@ window.onload = function(){
 				</ul>
 				<p>
 					<center><span>VARNA: Interactive drawing and editing of the RNA
-						secondary structure K&eacute;vin Darty,<br> Alain Denise and Yann Ponty
+						secondary structure K&eacute;vin Darty, Alain Denise and Yann Ponty
 						Bioinformatics, pp. 1974-1975, Vol. 25, no. 15, 2009</span></center>
-				</p>
->>>>>>> Update_Website
-			</div>
-	</div>
+				</p></div>
+
+		</div>
+		
+		
 
 </body>
 </html>

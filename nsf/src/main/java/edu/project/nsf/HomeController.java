@@ -35,8 +35,8 @@ public class HomeController {
 	// final static Logger Log =
 	// LogManager.getLogger(HomeController.class.getName());
 	// RegularExp r = new RegularExp();
-	String path = "/Users/ericfry/Library/Mobile Documents/com~apple~CloudDocs/School/NSF Project/SharedFolderBackup/NSF_Data_Files/";
-	String searchedPath = "/Users/ericfry/Library/Mobile Documents/com~apple~CloudDocs/School/NSF Project/SharedFolderBackup/NSF_Searched_Files/";
+	String path = "/Users/Capta/Desktop/dataFiles/NSF_Data_Files/";
+	String searchedPath = "/Users/Capta/Desktop/dataFiles/NSF_Searched_Files/";
 	// String inputRNA = path + "Input RNA.txt";
 	// String dataBase= r.openFile(inputRNA);
 
@@ -243,7 +243,13 @@ public class HomeController {
 		System.out.println("IP Address: " + request.getRemoteAddr() + " has accessed the Search Page.");
 		return "search";
 	}
-
+	//publication
+	@RequestMapping(value = "/Publications", method = RequestMethod.GET)
+	public String Publications(Model model, HttpServletRequest request) {
+		System.out.println("IP Address: " + request.getRemoteAddr() + " has accessed the publications Page.");
+		return "Publications";
+	}
+	
 	@RequestMapping(value = "/contact", method = RequestMethod.GET)
 	public String contact(Model model, HttpServletRequest request) {
 		System.out.println("IP Address: " + request.getRemoteAddr() + " has accessed the Contact Page.");
